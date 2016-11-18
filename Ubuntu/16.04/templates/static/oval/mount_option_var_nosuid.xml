@@ -1,0 +1,28 @@
+<def-group>
+  <definition class="compliance" id="mount_option_var_nosuid" version="1">
+    <metadata>
+      <title>Add nosuid Option to /var</title>
+      <affected family="unix">
+        <platform>multi_platform_ubuntu</platform>
+      </affected>
+      <description>Suid executables should not exist
+      within the /var directory. The nosuid mount option should be
+      specified for /var.</description>
+    </metadata>
+    <criteria>
+      <criterion comment="nosuid on /var" test_ref="test_nosuid_var" />
+    </criteria>
+  </definition>
+  <linux:partition_test check="all" check_existence="all_exist"
+  id="test_nosuid_var" version="1" comment="nosuid on /var">
+    <linux:object object_ref="object_var_nosuid_partition" />
+    <linux:state state_ref="state_var_nosuid" />
+  </linux:partition_test>
+  <linux:partition_object id="object_var_nosuid_partition" version="1">
+    <linux:mount_point>/var</linux:mount_point>
+  </linux:partition_object>
+  <linux:partition_state id="state_var_nosuid" version="1">
+    <linux:mount_options datatype="string" entity_check="at least one"
+    operation="equals">nosuid</linux:mount_options>
+  </linux:partition_state>
+</def-group>

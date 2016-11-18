@@ -58,6 +58,25 @@ world-writable directories installed by other software packages.
 <ref nist="SC-32"  anssi="NT28(R12)" />
 </Rule>
 
+<Rule id="partition_for_var_lib">
+<title>Ensure /var/lib Located On Separate Partition</title>
+<description>
+/var/lib, on Ubuntu and Debian distributions, contains executable files associated
+to the packaging system (in /var/lib/dpkg) and may contains other executables files.
+Because /var should not be mounted with the <tt>exec</tt> flag, the /var/lib partition,
+in these distributions, should be mounted separatedly.
+</description>
+<ocil><partition-check-macro part="/var/lib "/></ocil>
+<rationale>
+Placing <tt>/var/lib</tt> in its own partition
+enables better separation between noexec variables files (spoolers, caches, etc.)
+and some executables files, some relative to the distribution behavior.
+</rationale>
+<oval id="partition_for_var_lib" />
+<ref anssi="NT28(R12)" />
+</Rule>
+
+
 <Rule id="partition_for_var_log">
 <title>Ensure /var/log Located On Separate Partition</title>
 <description>
@@ -189,6 +208,56 @@ users cannot trivially fill partitions used for log or audit data storage.
   <ref anssi="NT28(R12)" />
 </Rule>
 
+<Rule id="mount_option_var_nosuid">
+  <title>Disallow suid executable in /var</title>
+  <description>
+    /var should only contain spoolers and caches. Other var content (logs, databases, packages content) should be
+    in other paritions (/var/lib, /var/log, /var/run)
+  <mount-desc-macro option="nosuid" part="/var" />
+  </description>
+  <rationale>
+    In order to simplify the audit and integrity management of the system, executables, block devices and
+    setuid/setgid executables should be clearly deployed on the system and restricted to specific, well-known
+    partitions and directories.
+  </rationale>
+  <oval id="mount_option_var_nosuid"/>
+  <ref anssi="NT28(R12)" />
+</Rule>
+
+
+<Rule id="mount_option_var_nodev">
+  <title>Disallow devices in /var</title>
+  <description>
+    /var should only contain spoolers and caches. Other var content (logs, databases, packages content) should be
+    in other paritions (/var/lib, /var/log, /var/run)
+  <mount-desc-macro option="nodev" part="/var" />
+  </description>
+  <rationale>
+    In order to simplify the audit and integrity management of the system, executables, block devices and
+    setuid/setgid executables should be clearly deployed on the system and restricted to specific, well-known
+    partitions and directories.
+  </rationale>
+  <oval id="mount_option_var_nodev"/>
+  <ref anssi="NT28(R12)" />
+</Rule>
+
+
+<Rule id="mount_option_var_noexec">
+  <title>Disallow executable in /var</title>
+  <description>
+    /var should only contain spoolers and caches. Other var content (logs, databases, packages content) should be
+    in other paritions (/var/lib, /var/log, /var/run)
+  <mount-desc-macro option="noexec" part="/var" />
+  </description>
+  <rationale>
+    In order to simplify the audit and integrity management of the system, executables, block devices and
+    setuid/setgid executables should be clearly deployed on the system and restricted to specific, well-known
+    partitions and directories.
+  </rationale>
+  <oval id="mount_option_var_noexec"/>
+  <ref anssi="NT28(R12)" />
+</Rule>
+
 <Rule id="mount_option_tmp_nosuid">
   <title>Disallow suid executable in /tmp</title>
   <description>
@@ -286,6 +355,5 @@ accessed by privilegied programs, avoiding an exploitation vector exploiting uns
 </Rule>
 
 </Group>
-
 
 </Group>

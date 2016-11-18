@@ -6,12 +6,16 @@
 <select idref="partition_for_tmp" selected="true"/>
 <select idref="partition_for_var" selected="true"/>
 <select idref="partition_for_var_log" selected="true"/>
+<select idref="partition_for_var_lib" selected="true"/>
 <select idref="partition_for_var_log_audit" selected="true"/>
 <select idref="partition_for_home" selected="true"/>
 
 <select idref="mount_option_boot_nosuid" selected="true"/>
 <select idref="mount_option_boot_nodev" selected="true"/>
 <select idref="mount_option_boot_noexec" selected="true"/>
+<select idref="mount_option_var_nosuid" selected="true"/>
+<select idref="mount_option_var_nodev" selected="true"/>
+<select idref="mount_option_var_noexec" selected="true"/>
 <select idref="mount_option_tmp_nosuid" selected="true"/>
 <select idref="mount_option_tmp_nodev" selected="true"/>
 <select idref="mount_option_tmp_noexec" selected="true"/>

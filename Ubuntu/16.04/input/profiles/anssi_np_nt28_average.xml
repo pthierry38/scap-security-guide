@@ -15,6 +15,7 @@
 <select idref="mount_option_tmp_nosuid" selected="true"/>
 <select idref="mount_option_tmp_nodev" selected="true"/>
 <select idref="mount_option_tmp_noexec" selected="true"/>
+<select idref="mount_option_proc_hidepid" selected="true"/>
 
 <!-- services -->
 <select idref="package_ntp_installed" selected="true"/>

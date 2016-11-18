@@ -9,8 +9,12 @@
         Reduce visibility to process listing.
       </description>
     </metadata>
-    <criteria>
+    <criteria operator="OR">
       <criterion comment="hidepid on /proc" test_ref="test_hidepid_proc" />
+      <criteria operator="AND">
+        <extend_definition comment="kernel.grsecurity.grsec_lock configuration setting check" definition_ref="sysctl_static_kernel_grsecurity_grsec_lock" />
+        <extend_definition comment="kernel.grsecurity.grsec_lock runtime setting check" definition_ref="sysctl_runtime_kernel_grsecurity_grsec_lock" />
+      </criteria>
     </criteria>
   </definition>
   <linux:partition_test check="all" check_existence="all_exist"

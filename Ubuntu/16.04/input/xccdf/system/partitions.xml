@@ -238,6 +238,22 @@ users cannot trivially fill partitions used for log or audit data storage.
   <ref anssi="NT28(R12)" />
 </Rule>
 
+<Rule id="mount_option_proc_hidepid">
+  <title>Reduce visibility to processes listing in /proc</title>
+  <description>
+    /proc contains a lots if informations about all processes being executed on the sytem.
+    This protection is also made by GRSecurity patch or some LSM such as SELinux in Enforced mode.
+    <mount-desc-macro option="noexec" part="/tmp" />
+  </description>
+  <ocil></ocil>
+  <rationale>
+    When having informations about the system processes id, it is possible to interact with them and
+    to get back many informations about them, even for critical processes, that chan be use to attack them.
+  </rationale>
+  <oval id="mount_option_proc_hidepid"/>
+  <ref anssi="NT28(R12)" />
+</Rule>
+
 </Group>
 
 <Group id="fs-restrict">

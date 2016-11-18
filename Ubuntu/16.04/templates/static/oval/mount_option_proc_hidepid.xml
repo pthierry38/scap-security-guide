@@ -1,0 +1,28 @@
+<def-group>
+  <definition class="compliance" id="mount_option_proc_hidepid" version="1">
+    <metadata>
+      <title>Add hidepid Option to /proc</title>
+      <affected family="unix">
+        <platform>multi_platform_ubuntu</platform>
+      </affected>
+      <description>
+        Reduce visibility to process listing.
+      </description>
+    </metadata>
+    <criteria>
+      <criterion comment="hidepid on /proc" test_ref="test_hidepid_proc" />
+    </criteria>
+  </definition>
+  <linux:partition_test check="all" check_existence="all_exist"
+  id="test_hidepid_proc" version="1" comment="hidepid on /proc">
+    <linux:object object_ref="object_proc_hidepid_partition" />
+    <linux:state state_ref="state_proc_hidepid" />
+  </linux:partition_test>
+  <linux:partition_object id="object_proc_hidepid_partition" version="1">
+    <linux:mount_point>/proc</linux:mount_point>
+  </linux:partition_object>
+  <linux:partition_state id="state_proc_hidepid" version="1">
+    <linux:mount_options datatype="string" entity_check="at least one"
+    operation="equals">hidepid=1</linux:mount_options>
+  </linux:partition_state>
+</def-group>

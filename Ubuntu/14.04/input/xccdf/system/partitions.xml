@@ -136,6 +136,111 @@ users cannot trivially fill partitions used for log or audit data storage.
 
 </Group>
 
+<Group id="partition_mountflags">
+  <title>Partitions mount flags</title>
+  <description>
+    Depending on the partition content, mount flags should vary to avoid invalid usage of the partition.
+  </description>
+
+<Rule id="mount_option_boot_nosuid">
+  <title>Disallow suid executable in /boot</title>
+  <description>
+  /boot should only contain the kernel, initramfs and the bootloader configuration.
+  <mount-desc-macro option="nosuid" part="/boot" />
+  </description>
+  <rationale>
+    In order to simplify the audit and integrity management of the system, executables, block devices and
+    setuid/setgid executables should be clearly deployed on the system and restricted to specific, well-known
+    partitions and directories.
+  </rationale>
+  <oval id="mount_option_boot_nosuid"/>
+  <ref anssi="NT28(R12)" />
+</Rule>
+
+
+<Rule id="mount_option_boot_nodev">
+  <title>Disallow devices in /boot</title>
+  <description>
+  /boot should only contain the kernel, initramfs and the bootloader configuration.
+  <mount-desc-macro option="nodev" part="/boot" />
+  </description>
+  <rationale>
+    In order to simplify the audit and integrity management of the system, executables, block devices and
+    setuid/setgid executables should be clearly deployed on the system and restricted to specific, well-known
+    partitions and directories.
+  </rationale>
+  <oval id="mount_option_boot_nodev"/>
+  <ref anssi="NT28(R12)" />
+</Rule>
+
+
+<Rule id="mount_option_boot_noexec">
+  <title>Disallow executable in /boot</title>
+  <description>
+  /boot should only contain the kernel, initramfs and the bootloader configuration.
+  <mount-desc-macro option="noexec" part="/boot" />
+  </description>
+  <rationale>
+    In order to simplify the audit and integrity management of the system, executables, block devices and
+    setuid/setgid executables should be clearly deployed on the system and restricted to specific, well-known
+    partitions and directories.
+  </rationale>
+  <oval id="mount_option_boot_noexec"/>
+  <ref anssi="NT28(R12)" />
+</Rule>
+
+<Rule id="mount_option_tmp_nosuid">
+  <title>Disallow suid executable in /tmp</title>
+  <description>
+  /tmp should be used only for user temporary files, not executables or block devices.
+  <mount-desc-macro option="nosuid" part="/tmp" />
+  </description>
+  <ocil></ocil>
+  <rationale>
+    In order to simplify the audit and integrity management of the system, executables, block devices and
+    setuid/setgid executables should be clearly deployed on the system and restricted to specific, well-known
+    partitions and directories.
+  </rationale>
+  <oval id="mount_option_tmp_nosuid"/>
+  <ref anssi="NT28(R12)" />
+</Rule>
+
+
+<Rule id="mount_option_tmp_nodev">
+  <title>Disallow devices in /tmp</title>
+  <description>
+  /tmp should be used only for user temporary files, not executables or block devices.
+  <mount-desc-macro option="nodev" part="/tmp" />
+  </description>
+  <rationale>
+    In order to simplify the audit and integrity management of the system, executables, block devices and
+    setuid/setgid executables should be clearly deployed on the system and restricted to specific, well-known
+    partitions and directories.
+  </rationale>
+  <oval id="mount_option_tmp_nodev"/>
+  <ref anssi="NT28(R12)" />
+</Rule>
+
+
+<Rule id="mount_option_tmp_noexec">
+  <title>Disallow executables in /tmp</title>
+  <description>
+    /tmp should be used only for user temporary files, not executables or block devices.
+    <mount-desc-macro option="noexec" part="/tmp" />
+  </description>
+  <ocil></ocil>
+  <rationale>
+    In order to simplify the audit and integrity management of the system, executables, block devices and
+    setuid/setgid executables should be clearly deployed on the system and restricted to specific, well-known
+    partitions and directories.
+  </rationale>
+  <oval id="mount_option_tmp_noexec"/>
+  <ref anssi="NT28(R12)" />
+</Rule>
+
+</Group>
+
+
 <Group id="fs-restrict">
 <title>filesystem rights management</title>
 <description>Adding filesystem specific hardening seriously limits various exploitation vectors based on

@@ -344,7 +344,7 @@ If logrotate is configured properly, output should include references to
 <tt>/etc/cron.daily</tt>.
 </ocil>
 <oval id="ensure_logrotate_activated" />
-<ref nist="AU-9" disa="366" pcidss="Req-10.7" />
+<ref anssi="NT012(R18)" nist="AU-9" disa="366" pcidss="Req-10.7" />
 </Rule>
 </Group>
 

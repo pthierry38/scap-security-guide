@@ -1,5 +1,5 @@
 scap-security-guide for Debian
------------------------------
+------------------------------
 
 The OpenSCAP team has separated the SCAP implementation (OpenSCAP project)
 and the Guides and benchmarks (SCAP-security-guide project), used by the
@@ -7,5 +7,21 @@ oscap binary to validate the local system.
 
 This package suite deploy all guides and benchmarks that are not a
 part of the openSCAP project directly (deployed through libopenscap8).
+
+Using the XCCDF benchmarks
+--------------------------
+
+benchmarks and Oval files are deployed in /usr/share/<package-name>/
+
+You can start a local bench using the following command. See the associated
+guides to be informed of the profiles name.
+
+# oscap xccdf eval --profile <profilename> \
+  --cpe /usr/share/<package-name>/ssg-<target>-cpe-dictionary.xml \
+  --results <resulsfile>.xml \
+  --report <reportfile>.html \
+  /usr/share/<package-name>/ssg-<target>-xccdf.xml 
+
+results and report are generated during oscap execution.
 
  -- Philippe Thierry <phil@reseau-libre.net>  Tue, 17 Jan 2017 10:26:46 +0100

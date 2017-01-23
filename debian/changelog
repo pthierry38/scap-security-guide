@@ -1,3 +1,11 @@
+scap-security-guide (0.1.31-2) sid; urgency=medium
+
+  * Non-maintainer upload.
+  * Updated control file to use correct Standard-version.
+  * add watch file for uscan
+
+ -- Philippe Thierry <phil@poseidon.reseau-libre.net>  Mon, 23 Jan 2017 18:57:11 +0100
+
 scap-security-guide (0.1.31-1~sid) sid; urgency=medium
 
   * Initial Release.

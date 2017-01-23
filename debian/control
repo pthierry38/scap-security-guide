@@ -19,7 +19,7 @@ Description: SCAP Security guide base content and documentation
 Package: ssg-debian8
 Architecture: all
 Depends: ${misc:Depends}, libopenscap8, ssg-base
-Description: SCAP Guides and benchmarks targetting Debian 8
+Description: SCAP Guides and benchmarks targeting Debian 8
  This package contains all the SCAP guides, benchmarks and remediation
  files for Debian Jessie. Remediation files are Shell-based, Ansible-based
  and Puppet-based depending on the target infrastructure deployment policy
@@ -27,7 +27,7 @@ Description: SCAP Guides and benchmarks targetting Debian 8
 Package: ssg-ubuntu1604
 Architecture: all
 Depends: ${misc:Depends}, libopenscap8, ssg-base
-Description: SCAP Guides and benchmarks targetting Ubuntu 16.04
+Description: SCAP Guides and benchmarks targeting Ubuntu 16.04
  This package contains all the SCAP guides, benchmarks and remediation
  files for Ubuntu Xenial. Remediation files are Shell-based, Ansible-based
  and Puppet-based depending on the target infrastructure deployment policy
@@ -35,7 +35,7 @@ Description: SCAP Guides and benchmarks targetting Ubuntu 16.04
 Package: ssg-firefox
 Architecture: all
 Depends: ${misc:Depends}, libopenscap8, ssg-base
-Description: SCAP Guides and benchmarks targetting Firefox Browser
+Description: SCAP Guides and benchmarks targeting Firefox Browser
  This package contains all the SCAP guides, benchmarks and remediation
  files for Firefox web browser. Remediation files are Shell-based, Ansible-based
  and Puppet-based depending on the target infrastructure deployment policy

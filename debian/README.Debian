@@ -1,0 +1,11 @@
+scap-security-guide for Debian
+-----------------------------
+
+The OpenSCAP team has separated the SCAP implementation (OpenSCAP project)
+and the Guides and benchmarks (SCAP-security-guide project), used by the
+oscap binary to validate the local system.
+
+This package suite deploy all guides and benchmarks that are not a
+part of the openSCAP project directly (deployed through libopenscap8).
+
+ -- Philippe Thierry <phil@reseau-libre.net>  Tue, 17 Jan 2017 10:26:46 +0100

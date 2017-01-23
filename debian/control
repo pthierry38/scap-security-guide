@@ -9,7 +9,7 @@ Vcs-Git: https://github.com/OpenSCAP/scap-security-guide.git
 Vcs-Browser: https://github.com/OpenSCAP/scap-security-guide
 
 Package: ssg-doc
-Architecture: all
+Architecture: linux-any
 Depends: ${misc:Depends}, libopenscap8
 Suggests: ansible (>= 2), puppet (>= 4.8), bash (>= 4.4)
 Description: SCAP Security guide manuals and docs
@@ -17,7 +17,7 @@ Description: SCAP Security guide manuals and docs
  and related documentation
 
 Package: ssg-debian8
-Architecture: all
+Architecture: linux-any
 Depends: ${misc:Depends}, libopenscap8
 Suggests: ansible (>= 2), puppet (>= 4.8), bash (>= 4.4)
 Description: SCAP Guides and benchmarks targetting Debian 8
@@ -26,7 +26,7 @@ Description: SCAP Guides and benchmarks targetting Debian 8
  and Puppet-based depending on the target infrastructure deployment policy
 
 Package: ssg-ubuntu1604
-Architecture: all
+Architecture: linux-any
 Depends: ${misc:Depends}, libopenscap8
 Suggests: ansible (>= 2), puppet (>= 4.8), bash (>= 4.4)
 Description: SCAP Guides and benchmarks targetting Ubuntu 16.04
@@ -35,7 +35,7 @@ Description: SCAP Guides and benchmarks targetting Ubuntu 16.04
  and Puppet-based depending on the target infrastructure deployment policy
 
 Package: ssg-firefox
-Architecture: all
+Architecture: linux-any
 Depends: ${misc:Depends}, libopenscap8
 Suggests: ansible (>= 2), puppet (>= 4.8), bash (>= 4.4)
 Description: SCAP Guides and benchmarks targetting Firefox Browser

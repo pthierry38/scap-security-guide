@@ -1,5 +1,5 @@
-scap-security-guide (1.2.5) unstable; urgency=medium
+scap-security-guide (0.1.31-1~sid) unstable; urgency=medium
 
   * Initial Release.
 
- -- pret <test@toto.com>  Tue, 17 Jan 2017 10:26:46 +0100
+ -- pret <phil@reseau-libre.net>  Tue, 17 Jan 2017 10:26:46 +0100

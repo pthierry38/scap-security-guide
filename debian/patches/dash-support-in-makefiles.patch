@@ -1,0 +1,47 @@
+--- a/Fedora/Makefile
++++ b/Fedora/Makefile
+@@ -62,7 +62,7 @@
+ 	cp $(OUT)/$(ID)-$(PROD)-ocil.xml $(DIST)/content
+ 	cp $(OUT)/$(ID)-$(PROD)-ds.xml $(DIST)/content
+ 	mkdir -p $(DIST)/guide
+-	cp $(OUT)/*-guide-*.html $(DIST)/guide
++	/bin/cp $(OUT)/*-guide-*.html $(DIST)/guide
+ 
+ clean:
+ 	rm -rf $(OUT)/*
+--- a/Firefox/Makefile
++++ b/Firefox/Makefile
+@@ -115,7 +115,7 @@
+ 	cp $(OUT)/$(ID)-$(PROD)-cpe-oval.xml $(DIST)/content
+ 	cp $(OUT)/$(ID)-$(PROD)-ds.xml $(DIST)/content
+ 	mkdir -p $(DIST)/guide
+-	cp $(OUT)/*-guide-*.html $(DIST)/guide
++	/bin/cp $(OUT)/*-guide-*.html $(DIST)/guide
+ 
+ clean:
+ 	rm -rf $(OUT)/*
+--- a/RHEL/5/Makefile
++++ b/RHEL/5/Makefile
+@@ -135,7 +135,7 @@
+ 	cp $(OUT)/$(ID)-centos5-ds.xml $(DIST)/content
+ 	cp $(OUT)/$(ID)-sl5-xccdf.xml $(DIST)/content
+ 	cp $(OUT)/$(ID)-sl5-ds.xml $(DIST)/content
+-	cp $(OUT)/*-guide-*.html $(DIST)/guide
++	/bin/cp $(OUT)/*-guide-*.html $(DIST)/guide
+ 
+ clean:
+ 	rm -rf $(OUT)/*
+--- a/RHEL/6/Makefile
++++ b/RHEL/6/Makefile
+@@ -153,9 +153,9 @@
+ 	cp $(OUT)/$(ID)-$(PROD)-cpe-oval.xml $(DIST)/content
+ 	cp $(OUT)/$(ID)-$(PROD)-ds.xml $(DIST)/content
+ 	mkdir -p $(DIST)/tables
+-	cp $(OUT)/table-*.{x,}html $(DIST)/tables
++	/bin/cp $(OUT)/table-*.{x,}html $(DIST)/tables
+ 	mkdir -p $(DIST)/guide
+-	cp $(OUT)/*-guide-*.html $(DIST)/guide
++	/bin/cp $(OUT)/*-guide-*.html $(DIST)/guide
+ 	cp $(OUT)/$(ID)-centos6-xccdf.xml $(DIST)/content
+ 	cp $(OUT)/$(ID)-centos6-ds.xml $(DIST)/content
+ 	cp $(OUT)/$(ID)-sl6-xccdf.xml $(DIST)/content

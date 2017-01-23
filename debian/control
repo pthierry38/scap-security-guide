@@ -2,7 +2,7 @@ Source: scap-security-guide
 Section: admin
 Priority: optional
 Maintainer: Philippe Thierry <phil@reseau-libre.net>
-Build-Depends: debhelper (>=9)
+Build-Depends: debhelper (>=9), quilt, xsltproc, libxml2-utils, coreutils, bash, sed, libopenscap8
 Standards-Version: 3.9.6
 Homepage: https://www.open-scap.org/security-policies/scap-security-guide
 Vcs-Git: https://github.com/OpenSCAP/scap-security-guide.git

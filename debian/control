@@ -8,36 +8,33 @@ Homepage: https://www.open-scap.org/security-policies/scap-security-guide
 Vcs-Git: https://github.com/OpenSCAP/scap-security-guide.git
 Vcs-Browser: https://github.com/OpenSCAP/scap-security-guide
 
-Package: ssg-doc
-Architecture: linux-any
+Package: ssg-base
+Architecture: all
 Depends: ${misc:Depends}, libopenscap8
 Suggests: ansible (>= 2), puppet (>= 4.8), bash (>= 4.4)
-Description: SCAP Security guide manuals and docs
- This package contains all the SCAP-security-guide specific manuals
- and related documentation
+Description: SCAP Security guide base content and documentation
+ This package contains the basic content and manual pages explaining how
+ the SCAP-security-guide works.
 
 Package: ssg-debian8
-Architecture: linux-any
-Depends: ${misc:Depends}, libopenscap8
-Suggests: ansible (>= 2), puppet (>= 4.8), bash (>= 4.4)
+Architecture: all
+Depends: ${misc:Depends}, libopenscap8, ssg-base
 Description: SCAP Guides and benchmarks targetting Debian 8
  This package contains all the SCAP guides, benchmarks and remediation
  files for Debian Jessie. Remediation files are Shell-based, Ansible-based
  and Puppet-based depending on the target infrastructure deployment policy
 
 Package: ssg-ubuntu1604
-Architecture: linux-any
-Depends: ${misc:Depends}, libopenscap8
-Suggests: ansible (>= 2), puppet (>= 4.8), bash (>= 4.4)
+Architecture: all
+Depends: ${misc:Depends}, libopenscap8, ssg-base
 Description: SCAP Guides and benchmarks targetting Ubuntu 16.04
  This package contains all the SCAP guides, benchmarks and remediation
  files for Ubuntu Xenial. Remediation files are Shell-based, Ansible-based
  and Puppet-based depending on the target infrastructure deployment policy
 
 Package: ssg-firefox
-Architecture: linux-any
-Depends: ${misc:Depends}, libopenscap8
-Suggests: ansible (>= 2), puppet (>= 4.8), bash (>= 4.4)
+Architecture: all
+Depends: ${misc:Depends}, libopenscap8, ssg-base
 Description: SCAP Guides and benchmarks targetting Firefox Browser
  This package contains all the SCAP guides, benchmarks and remediation
  files for Firefox web browser. Remediation files are Shell-based, Ansible-based

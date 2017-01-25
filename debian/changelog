@@ -1,3 +1,10 @@
+scap-security-guide (0.1.31-4) sid; urgency=medium
+
+  * set ssg parent dir as property of ssg-base
+  * add RHEL guides and benchmarks
+
+ -- Philippe Thierry <phil@reseau-libre.net>  Wed, 25 Jan 2017 21:34:27 +0100
+
 scap-security-guide (0.1.31-3) sid; urgency=medium
 
   * Add XCCDF benchmarks and guides for JRE and Webmin

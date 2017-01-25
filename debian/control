@@ -58,3 +58,30 @@ Description: SCAP Guides and benchmarks targeting Java Runtime Environment
  Ansible-based and Puppet-based depending on the target infrastructure deployment
  policy
 
+Package: ssg-rhel5
+Architecture: all
+Depends: ${misc:Depends}, libopenscap8, ssg-base
+Description: SCAP Guides and benchmarks targeting Red-Hat Enterprise Linux 5
+ This package contains all the SCAP guides, benchmarks and remediation
+ files for RHEL 5 and CentOS 5. Remediation files are Shell-based,
+ Ansible-based and Puppet-based depending on the target infrastructure
+ deployment policy
+
+
+Package: ssg-rhel6
+Architecture: all
+Depends: ${misc:Depends}, libopenscap8, ssg-base
+Description: SCAP Guides and benchmarks targeting Red-Hat Enterprise Linux 6
+ This package contains all the SCAP guides, benchmarks and remediation
+ files for RHEL 6 and CentOS 6. Remediation files are Shell-based,
+ Ansible-based and Puppet-based depending on the target infrastructure
+ deployment policy
+
+Package: ssg-rhel7
+Architecture: all
+Depends: ${misc:Depends}, libopenscap8, ssg-base
+Description: SCAP Guides and benchmarks targeting Red-Hat Enterprise Linux 7
+ This package contains all the SCAP guides, benchmarks and remediation
+ files for RHEL 7 and CentOS 7. Remediation files are Shell-based,
+ Ansible-based and Puppet-based depending on the target infrastructure
+ deployment policy

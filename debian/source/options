@@ -1,2 +1,2 @@
 tar-ignore = "docs/RedHat/xsl/.svn"
-extend-diff-ignore = "*Jenkinsfile*|*.gitlab-ci.yml"
+extend-diff-ignore = ".gitlab-ci.yml"

@@ -1,3 +1,10 @@
+scap-security-guide (0.1.31-5) sid; urgency=medium
+
+  * Updated debian build to add upstream changelog file to each package.
+  * declare guides as doc-base (for lintian conformity)
+
+ -- Philippe Thierry <phil@reseau-libre.net>  Mon, 30 Jan 2017 10:44:45 +0100
+
 scap-security-guide (0.1.31-4) sid; urgency=medium
 
   * set ssg parent dir as property of ssg-base

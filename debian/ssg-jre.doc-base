@@ -1,0 +1,10 @@
+Document: Jre
+Title: JRE Security Guide for various security Policies
+Author: SCAP Security Guide team
+Abstract: This manual describes how to harden a JRE installation, in
+conformance with various standard policies such as ANSSI requirements, DISA
+SP-800 or PCI-DSS.
+Section: File Management
+Format: HTML
+Index: /usr/share/doc/ssg/jre/ssg-jre-guide-index.html
+Files: /usr/share/doc/ssg/jre/*.html

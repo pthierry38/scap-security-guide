@@ -3,6 +3,7 @@ set -e
 
 case $1 in
   configure)
+    cp usr/share/doc/ssg-base/scap-security-guide.spec usr/share/doc/ssg-base/changelog
     gzip usr/share/doc/ssg-base/changelog
   ;;
 esac

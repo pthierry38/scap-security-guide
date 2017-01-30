@@ -7,5 +7,5 @@ Abstract: This manual describes how to harden a Firefox installation, in
 Section: System/Security
 
 Format: HTML
-Index: /usr/share/doc/ssg/firefox/ssg-firefox-guide-index.html
-Files: /usr/share/doc/ssg/firefox/*.html
+Index: /usr/share/doc/ssg/firefox/guide/ssg-firefox-guide-index.html
+Files: /usr/share/doc/ssg/firefox/guide/*.html

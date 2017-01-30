@@ -7,5 +7,5 @@ Abstract: This manual describes how to harden a Debian 8 installation, in
 Section: System/Security
 
 Format: HTML
-Index: /usr/share/doc/ssg/debian8/ssg-debian8-guide-index.html
-Files: /usr/share/doc/ssg/debian8/*.html
+Index: /usr/share/doc/ssg/debian8/guide/ssg-debian8-guide-index.html
+Files: /usr/share/doc/ssg/debian8/guide/*.html

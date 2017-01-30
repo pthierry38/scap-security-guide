@@ -7,5 +7,5 @@ Abstract: This manual describes how to harden a Webmin installation, in
 Section: System/Security
 
 Format: HTML
-Index: /usr/share/doc/ssg/webmin/ssg-webmin-guide-index.html
-Files: /usr/share/doc/ssg/webmin/*.html
+Index: /usr/share/doc/ssg/webmin/guide/ssg-webmin-guide-index.html
+Files: /usr/share/doc/ssg/webmin/guide/*.html

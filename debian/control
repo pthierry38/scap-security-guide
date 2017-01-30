@@ -14,7 +14,8 @@ Depends: ${misc:Depends}, libopenscap8
 Suggests: ansible (>= 2), puppet (>= 4.8), bash (>= 4.4)
 Description: SCAP Security guide base content and documentation
  This package contains the basic content and manual pages explaining how
- the SCAP-security-guide works.
+ the SCAP-security-guide works. It deploys man page and all various
+ informations about current SSG release
 
 Package: ssg-debian8
 Architecture: all

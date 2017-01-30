@@ -24,5 +24,6 @@
 #	dh_auto_configure -- #	-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH)
 
 override_dh_auto_build:
-	        dh_auto_build -- all version-update
+	        dh_auto_build -- all
+		$(MAKE) version-update
 

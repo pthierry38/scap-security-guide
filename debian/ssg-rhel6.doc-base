@@ -7,5 +7,5 @@ Abstract: This manual describes how to harden a RHEL 6 installation, in
 Section: System/Security
 
 Format: HTML
-Index: /usr/share/doc/ssg/rhel6/guide/ssg-rhel6-guide-index.html
-Files: /usr/share/doc/ssg/rhel6/guide/*.html
+Index: /usr/share/doc/ssg/RHEL6/guide/ssg-rhel6-guide-index.html
+Files: /usr/share/doc/ssg/RHEL6/guide/*.html

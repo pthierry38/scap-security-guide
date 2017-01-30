@@ -4,7 +4,8 @@ Author: SCAP Security Guide team
 Abstract: This manual describes how to harden a RHEL 7 installation, in
  conformance with various standard policies such as ANSSI requirements, DISA
  SP-800 or PCI-DSS.
-Section: Security
+Section: System/Security
+
 Format: HTML
 Index: /usr/share/doc/ssg/rhel7/ssg-rhel7-guide-index.html
 Files: /usr/share/doc/ssg/rhel7/*.html

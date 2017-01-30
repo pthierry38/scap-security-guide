@@ -1,3 +1,4 @@
+Updated man page to support lexgrog. NAME entry was not correctly formated.
 --- a/docs/scap-security-guide.8
 +++ b/docs/scap-security-guide.8
 @@ -1,7 +1,7 @@

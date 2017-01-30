@@ -1,6 +1,5 @@
-Index: scap-security-guide/Makefile
-===================================================================
---- scap-security-guide.orig/Makefile
+Add Ubunbu target (ubuntu1604) to default target. Also updated dist target.
+--- scap-security-guide/Makefile
 +++ scap-security-guide/Makefile
 @@ -36,8 +36,8 @@ DOCDIR=$(DATADIR)/doc
  

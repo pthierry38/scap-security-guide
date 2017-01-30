@@ -1,3 +1,5 @@
+Updated Makefiles to support dash. advanced globbing not supported
+and replaced by call to find
 --- a/RHEL/6/Makefile
 +++ b/RHEL/6/Makefile
 @@ -153,9 +153,10 @@

@@ -9,3 +9,16 @@
  associated validation mechanisms utilizing the Security Content
  Automation Protocol (SCAP).
  
+@@ -443,10 +443,10 @@
+ 
+ "The consensus content was developed using an open-source project called SCAP
+ Security Guide. The project's website is https://www.open-scap.org/security-policies/scap-security-guide.
+-Except for differences in formatting to accomodate the DISA STIG publishing
++Except for differences in formatting to accommodate the DISA STIG publishing
+ process, the content of the Red Hat Enterprise Linux 6 STIG should mirrot the SCAP Security Guide
+ content with only minor divergence as updates from multiple sources work through
+-the concensus process."
++the consensus process."
+ 
+ The DoD STIG for Red Hat Enterprise Linux 6 was released June 2013. Currently, the
+ DoD Red Hat Enterprise Linux 6 STIG contains only XCCDF content and is available online:

@@ -37,8 +37,9 @@ Architecture: all
 Depends: ${misc:Depends}, libopenscap8, ssg-base
 Description: SCAP Guides and benchmarks targeting Firefox Browser
  This package contains all the SCAP guides, benchmarks and remediation
- files for Firefox web browser. Remediation files are Shell-based, Ansible-based
- and Puppet-based depending on the target infrastructure deployment policy
+ files for Firefox web browser. Remediation files are Shell-based, Ansible-
+ based and Puppet-based depending on the target infrastructure deployment
+ policy
 
 Package: ssg-webmin
 Architecture: all
@@ -46,8 +47,8 @@ Depends: ${misc:Depends}, libopenscap8, ssg-base
 Description: SCAP Guides and benchmarks targeting Webmin
  This package contains all the SCAP guides, benchmarks and remediation
  files for Webmin administration utility. Remediation files are Shell-based,
- Ansible-based and Puppet-based depending on the target infrastructure deployment
- policy
+ Ansible-based and Puppet-based depending on the target infrastructure
+ deployment policy
 
 Package: ssg-jre
 Architecture: all
@@ -55,8 +56,8 @@ Depends: ${misc:Depends}, libopenscap8, ssg-base
 Description: SCAP Guides and benchmarks targeting Java Runtime Environment
  This package contains all the SCAP guides, benchmarks and remediation
  files for Java Runtime Environment. Remediation files are Shell-based,
- Ansible-based and Puppet-based depending on the target infrastructure deployment
- policy
+ Ansible-based and Puppet-based depending on the target infrastructure
+ deployment policy
 
 Package: ssg-rhel5
 Architecture: all

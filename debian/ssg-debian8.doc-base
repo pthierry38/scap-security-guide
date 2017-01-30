@@ -3,7 +3,7 @@ Title: Debian 8 Security Guide for various security Policies
 Author: SCAP Security Guide team
 Abstract: This manual describes how to harden a Debian 8 installation, in
  conformance with various standard policies such as ANSSI requirements, DISA
-SP-800 or PCI-DSS.
+ SP-800 or PCI-DSS.
 Section: System/Security
 
 Format: HTML

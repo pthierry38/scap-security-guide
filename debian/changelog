@@ -1,6 +1,14 @@
 scap-security-guide (0.1.31-5) sid; urgency=medium
 
-  * Updated debian build to add upstream changelog file to each package.
+  * updated man page to be compliant to lexgrog
+  * corrected two spelling errors
+  * using output of version_update instead of .spec as release notes
+  * updated ssg-base for changelog
+  * exclude svn dir of upstream repo from source tarball
+  * updated doc-base for lintian compliance
+  * updated spelling mistakes and various syntax errors
+  * updated html files path (guide subdir added)
+  * updated patches to add description
   * declare guides as doc-base (for lintian conformity)
 
  -- Philippe Thierry <phil@reseau-libre.net>  Mon, 30 Jan 2017 10:44:45 +0100

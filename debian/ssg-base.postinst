@@ -4,6 +4,10 @@ set -e
 case $1 in
   configure)
     cp usr/share/doc/ssg-base/scap-security-guide.spec usr/share/doc/ssg-base/changelog
+    if [ -e usr/share/doc/ssg-base/changelog.gz ]; then
+      # delete old changelog when updating
+      rm usr/share/doc/ssg-base/changelog.gz
+    fi
     gzip usr/share/doc/ssg-base/changelog
   ;;
 esac

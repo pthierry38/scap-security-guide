@@ -1,0 +1,18 @@
+#!/bin/sh
+set -e
+
+# install parent dir for other ssg bin packages at preinst for
+# dependency management
+case $1 in
+	install)
+	  if [ ! -d /usr/share/ssg ]; then
+	    mkdir /usr/share/ssg
+          fi
+	  if [ ! -d /usr/share/doc/ssg ]; then
+	    mkdir /usr/share/doc/ssg
+          fi
+        ;;
+esac
+
+#DEBHELPER#
+

@@ -2,7 +2,7 @@ scap-security-guide (0.1.31-6) sid; urgency=medium
 
   * Updated various residual lintian warnings.
 
- -- Philippe Thierry <phil@poseidon.reseau-libre.net>  Mon, 30 Jan 2017 21:44:12 +0100
+ -- Philippe Thierry <phil@reseau-libre.net>  Mon, 30 Jan 2017 21:44:12 +0100
 
 scap-security-guide (0.1.31-5) sid; urgency=medium
 

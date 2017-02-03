@@ -24,4 +24,11 @@ guides to be informed of the profiles name.
 
 results and report are generated during oscap execution.
 
+In the case of using benchmark and Oval files over a complete infrastructure,
+libopenscap8 is not a real requirement on the host hosting the XCCDF profiles
+if they are executed on remote targets only (for e.g. using Ansible, Foreman,
+etc.). In that case, the tool deploying them has to copy the file to the remote
+target and run the oscap tool localy. The remote target don't need these files
+to be installed through apt.
+
  -- Philippe Thierry <phil@reseau-libre.net>  Tue, 17 Jan 2017 10:26:46 +0100

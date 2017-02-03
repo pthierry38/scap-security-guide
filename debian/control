@@ -19,7 +19,7 @@ Description: SCAP Security guide base content and documentation
 
 Package: ssg-debian8
 Architecture: all
-Depends: ${misc:Depends}, libopenscap8, ssg-base
+Depends: ${misc:Depends}, ssg-base
 Description: SCAP Guides and benchmarks targeting Debian 8
  This package contains all the SCAP guides, benchmarks and remediation
  files for Debian Jessie. Remediation files are Shell-based, Ansible-based
@@ -27,7 +27,7 @@ Description: SCAP Guides and benchmarks targeting Debian 8
 
 Package: ssg-ubuntu1604
 Architecture: all
-Depends: ${misc:Depends}, libopenscap8, ssg-base
+Depends: ${misc:Depends}, ssg-base
 Description: SCAP Guides and benchmarks targeting Ubuntu 16.04
  This package contains all the SCAP guides, benchmarks and remediation
  files for Ubuntu Xenial. Remediation files are Shell-based, Ansible-based
@@ -35,7 +35,7 @@ Description: SCAP Guides and benchmarks targeting Ubuntu 16.04
 
 Package: ssg-firefox
 Architecture: all
-Depends: ${misc:Depends}, libopenscap8, ssg-base
+Depends: ${misc:Depends}, ssg-base
 Description: SCAP Guides and benchmarks targeting Firefox Browser
  This package contains all the SCAP guides, benchmarks and remediation
  files for Firefox web browser. Remediation files are Shell-based, Ansible-
@@ -44,7 +44,7 @@ Description: SCAP Guides and benchmarks targeting Firefox Browser
 
 Package: ssg-webmin
 Architecture: all
-Depends: ${misc:Depends}, libopenscap8, ssg-base
+Depends: ${misc:Depends}, ssg-base
 Description: SCAP Guides and benchmarks targeting Webmin
  This package contains all the SCAP guides, benchmarks and remediation
  files for Webmin administration utility. Remediation files are Shell-based,
@@ -53,7 +53,7 @@ Description: SCAP Guides and benchmarks targeting Webmin
 
 Package: ssg-jre
 Architecture: all
-Depends: ${misc:Depends}, libopenscap8, ssg-base
+Depends: ${misc:Depends}, ssg-base
 Description: SCAP Guides and benchmarks targeting Java Runtime Environment
  This package contains all the SCAP guides, benchmarks and remediation
  files for Java Runtime Environment. Remediation files are Shell-based,
@@ -62,7 +62,7 @@ Description: SCAP Guides and benchmarks targeting Java Runtime Environment
 
 Package: ssg-rhel5
 Architecture: all
-Depends: ${misc:Depends}, libopenscap8, ssg-base
+Depends: ${misc:Depends}, ssg-base
 Description: SCAP Guides and benchmarks targeting Red-Hat Enterprise Linux 5
  This package contains all the SCAP guides, benchmarks and remediation
  files for RHEL 5 and CentOS 5. Remediation files are Shell-based,
@@ -72,7 +72,7 @@ Description: SCAP Guides and benchmarks targeting Red-Hat Enterprise Linux 5
 
 Package: ssg-rhel6
 Architecture: all
-Depends: ${misc:Depends}, libopenscap8, ssg-base
+Depends: ${misc:Depends}, ssg-base
 Description: SCAP Guides and benchmarks targeting Red-Hat Enterprise Linux 6
  This package contains all the SCAP guides, benchmarks and remediation
  files for RHEL 6 and CentOS 6. Remediation files are Shell-based,
@@ -81,7 +81,7 @@ Description: SCAP Guides and benchmarks targeting Red-Hat Enterprise Linux 6
 
 Package: ssg-rhel7
 Architecture: all
-Depends: ${misc:Depends}, libopenscap8, ssg-base
+Depends: ${misc:Depends}, ssg-base
 Description: SCAP Guides and benchmarks targeting Red-Hat Enterprise Linux 7
  This package contains all the SCAP guides, benchmarks and remediation
  files for RHEL 7 and CentOS 7. Remediation files are Shell-based,

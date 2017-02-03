@@ -2,6 +2,7 @@ scap-security-guide (0.1.31-7) sid; urgency=medium
 
   * Add proper copyright dep5 copyright file
   * Updated run-time dependencies
+  * set libopenscap8 as recommends, for security policy server cases
 
  -- Philippe Thierry <phil@reseau-libre.net>  Fri, 03 Feb 2017 12:58:01 +0100
 

@@ -70,7 +70,6 @@ Description: SCAP Guides and benchmarks targeting Red-Hat Enterprise Linux 5
  Ansible-based and Puppet-based depending on the target infrastructure
  deployment policy
 
-
 Package: ssg-rhel6
 Architecture: all
 Depends: ${misc:Depends}, ssg-base
@@ -88,3 +87,20 @@ Description: SCAP Guides and benchmarks targeting Red-Hat Enterprise Linux 7
  files for RHEL 7 and CentOS 7. Remediation files are Shell-based,
  Ansible-based and Puppet-based depending on the target infrastructure
  deployment policy
+
+Package: ssg-suse11
+Architecture: all
+Depends: ${misc:Depends}, ssg-base
+Description: SCAP Guides and benchmarks targeting SuSE 11
+ This package contains all the SCAP guides, benchmarks and remediation
+ files for SuSE 11. Remediation files are Shell-based, Ansible-based
+ and Puppet-based depending on the target infrastructure deployment policy
+
+Package: ssg-suse12
+Architecture: all
+Depends: ${misc:Depends}, ssg-base
+Description: SCAP Guides and benchmarks targeting SuSE 11
+ This package contains all the SCAP guides, benchmarks and remediation
+ files for SuSE 11. Remediation files are Shell-based, Ansible-based
+ and Puppet-based depending on the target infrastructure deployment policy
+

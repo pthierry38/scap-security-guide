@@ -1,3 +1,11 @@
+scap-security-guide (0.1.31-8) sid; urgency=medium
+
+  * Deleted upstream changelog file using rpm spec file. Waiting for real
+    changelog from upstream instead
+  * Add SuSE 11 and SuSE 12 benchmarks and guides
+
+ -- Philippe Thierry <phil@reseau-libre.net>  Sun, 05 Feb 2017 10:16:44 +0100
+
 scap-security-guide (0.1.31-7) sid; urgency=medium
 
   * Add proper copyright dep5 copyright file

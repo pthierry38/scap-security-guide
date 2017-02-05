@@ -7,5 +7,5 @@ Abstract: This manual describes how to harden a SuSE 11 installation, in
 Section: System/Security
 
 Format: HTML
-Index: /usr/share/doc/ssg/suse11/guide/ssg-suse11-guide-index.html
+Index: /usr/share/doc/ssg/suse11/guide/ssg-sle11-guide-index.html
 Files: /usr/share/doc/ssg/suse11/guide/*.html

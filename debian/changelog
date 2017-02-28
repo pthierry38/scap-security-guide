@@ -1,3 +1,10 @@
+scap-security-guide (0.1.31-9) sid; urgency=medium
+
+  * Updated binary packages name to simplify the structure
+  * bin packages are familly-based, avoiding variation when updating
+
+ -- Philippe Thierry <phil@reseau-libre.net>  Tue, 28 Feb 2017 12:31:16 +0100
+
 scap-security-guide (0.1.31-8) sid; urgency=medium
 
   * Deleted upstream changelog file using rpm spec file. Waiting for real

@@ -18,7 +18,7 @@ Description: SCAP Security guide base content and documentation
  the SCAP-security-guide works. It deploys man page and all various
  information about current SSG release
 
-Package: ssg-debian8
+Package: ssg-debian
 Architecture: all
 Depends: ${misc:Depends}, ssg-base
 Description: SCAP Guides and benchmarks targeting Debian 8
@@ -26,73 +26,32 @@ Description: SCAP Guides and benchmarks targeting Debian 8
  files for Debian Jessie. Remediation files are Shell-based, Ansible-based
  and Puppet-based depending on the target infrastructure deployment policy
 
-Package: ssg-ubuntu1604
+Package: ssg-debfamilly
 Architecture: all
 Depends: ${misc:Depends}, ssg-base
-Description: SCAP Guides and benchmarks targeting Ubuntu 16.04
+Description: SCAP Guides and benchmarks targeting all deb-based
+ distributions such as Ubuntu Trusty or Xenial.
  This package contains all the SCAP guides, benchmarks and remediation
- files for Ubuntu Xenial. Remediation files are Shell-based, Ansible-based
- and Puppet-based depending on the target infrastructure deployment policy
+ files. Remediation files are Shell-based, Ansible-based  and
+ Puppet-based depending on the target infrastructure deployment policy
 
-Package: ssg-firefox
+
+Package: ssg-applications
 Architecture: all
 Depends: ${misc:Depends}, ssg-base
-Description: SCAP Guides and benchmarks targeting Firefox Browser
+Description: SCAP Guides and benchmarks targeting applications such as
+ Firefox browser, Webmin, JRE.
  This package contains all the SCAP guides, benchmarks and remediation
- files for Firefox web browser. Remediation files are Shell-based, Ansible-
- based and Puppet-based depending on the target infrastructure deployment
+ files. Remediation files are Shell-based, Ansible-based and
+ Puppet-based depending on the target infrastructure deployment
  policy
 
-Package: ssg-webmin
+Package: ssg-otheros
 Architecture: all
 Depends: ${misc:Depends}, ssg-base
-Description: SCAP Guides and benchmarks targeting Webmin
+Description: SCAP Guides and benchmarks targeting other GNU/Linux
+ operating systems such as RHEL, Fedora or SuSE.
  This package contains all the SCAP guides, benchmarks and remediation
- files for Webmin administration utility. Remediation files are Shell-based,
- Ansible-based and Puppet-based depending on the target infrastructure
- deployment policy
-
-Package: ssg-jre
-Architecture: all
-Depends: ${misc:Depends}, ssg-base
-Description: SCAP Guides and benchmarks targeting Java Runtime Environment
- This package contains all the SCAP guides, benchmarks and remediation
- files for Java Runtime Environment. Remediation files are Shell-based,
- Ansible-based and Puppet-based depending on the target infrastructure
- deployment policy
-
-Package: ssg-rhel5
-Architecture: all
-Depends: ${misc:Depends}, ssg-base
-Description: SCAP Guides and benchmarks targeting Red-Hat Enterprise Linux 5
- This package contains all the SCAP guides, benchmarks and remediation
- files for RHEL 5 and CentOS 5. Remediation files are Shell-based,
- Ansible-based and Puppet-based depending on the target infrastructure
- deployment policy
-
-Package: ssg-rhel6
-Architecture: all
-Depends: ${misc:Depends}, ssg-base
-Description: SCAP Guides and benchmarks targeting Red-Hat Enterprise Linux 6
- This package contains all the SCAP guides, benchmarks and remediation
- files for RHEL 6 and CentOS 6. Remediation files are Shell-based,
- Ansible-based and Puppet-based depending on the target infrastructure
- deployment policy
-
-Package: ssg-rhel7
-Architecture: all
-Depends: ${misc:Depends}, ssg-base
-Description: SCAP Guides and benchmarks targeting Red-Hat Enterprise Linux 7
- This package contains all the SCAP guides, benchmarks and remediation
- files for RHEL 7 and CentOS 7. Remediation files are Shell-based,
- Ansible-based and Puppet-based depending on the target infrastructure
- deployment policy
-
-Package: ssg-suse11
-Architecture: all
-Depends: ${misc:Depends}, ssg-base
-Description: SCAP Guides and benchmarks targeting SuSE 11
- This package contains all the SCAP guides, benchmarks and remediation
- files for SuSE 11. Remediation files are Shell-based, Ansible-based
- and Puppet-based depending on the target infrastructure deployment policy
-
+ files. Remediation files are Shell-based, Ansible-based and
+ Puppet-based depending on the target infrastructure deployment
+ policy

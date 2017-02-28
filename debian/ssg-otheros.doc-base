@@ -1,0 +1,23 @@
+Document: ssg-otheros
+Title: Security Guide and various security Policies for all other OS
+Author: SCAP Security Guide team
+Abstract: This manual describes how to harden various OS installation, such
+ as RHEL, Fedora, SuSE, in conformance with various standard policies such
+ as ANSSI requirements, DISA SP-800 or PCI-DSS.
+Section: System/Security
+
+Format: HTML
+Index: /usr/share/doc/ssg/RHEL5/guide/ssg-rhel5-guide-index.html
+Files: /usr/share/doc/ssg/RHEL5/guide/*.html
+
+Format: HTML
+Index: /usr/share/doc/ssg/RHEL6/guide/ssg-rhel6-guide-index.html
+Files: /usr/share/doc/ssg/RHEL6/guide/*.html
+
+Format: HTML
+Index: /usr/share/doc/ssg/RHEL7/guide/ssg-rhel7-guide-index.html
+Files: /usr/share/doc/ssg/RHEL7/guide/*.html
+
+Format: HTML
+Index: /usr/share/doc/ssg/suse11/guide/ssg-sle11-guide-index.html
+Files: /usr/share/doc/ssg/suse11/guide/*.html

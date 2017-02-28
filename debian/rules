@@ -11,7 +11,7 @@
 dump_release:
 		debian/lib/release.py
 
-override_dh_auto_build:
+override_dh_auto_build: dump_release
 	        dh_auto_build -- all
 		$(MAKE) version-update
 

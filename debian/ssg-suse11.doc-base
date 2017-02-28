@@ -1,0 +1,11 @@
+Document: ssg-suse11
+Title: SuSE 11 Security Guide for various security Policies
+Author: SCAP Security Guide team
+Abstract: This manual describes how to harden a SuSE 11 installation, in
+ conformance with various standard policies such as ANSSI requirements, DISA
+ SP-800 or PCI-DSS.
+Section: System/Security
+
+Format: HTML
+Index: /usr/share/doc/ssg/suse11/guide/ssg-sle11-guide-index.html
+Files: /usr/share/doc/ssg/suse11/guide/*.html

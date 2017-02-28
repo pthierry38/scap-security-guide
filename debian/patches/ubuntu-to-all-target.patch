@@ -1,14 +1,14 @@
 Add Ubunbu target (ubuntu1604) to default target. Also updated dist target.
---- scap-security-guide/Makefile
-+++ scap-security-guide/Makefile
-@@ -36,8 +36,8 @@ DOCDIR=$(DATADIR)/doc
+--- a/Makefile
++++ b/Makefile
+@@ -36,8 +36,8 @@
  
  # Define Makefile targets below
  
 -all: validate-buildsystem fedora rhel5 rhel6 rhel7 rhel-osp7 rhevm3 webmin firefox jre chromium debian8 wrlinux
 -dist: chromium-dist firefox-dist fedora-dist jre-dist rhel6-dist rhel7-dist rhel-osp7-dist debian8-dist wrlinux-dist
-+all: validate-buildsystem fedora rhel5 rhel6 rhel7 rhel-osp7 rhevm3 webmin firefox jre chromium debian8 wrlinux ubuntu1604
-+dist: chromium-dist firefox-dist fedora-dist jre-dist rhel6-dist rhel7-dist rhel-osp7-dist debian8-dist wrlinux-dist ubuntu1604-dist
++all: validate-buildsystem fedora rhel5 rhel6 rhel7 rhel-osp7 rhevm3 webmin firefox jre chromium debian8 wrlinux ubuntu1604 suse11
++dist: chromium-dist firefox-dist fedora-dist jre-dist rhel6-dist rhel7-dist rhel-osp7-dist debian8-dist wrlinux-dist ubuntu1604-dist suse11-dist
  jenkins: all validate dist
  
  fedora:

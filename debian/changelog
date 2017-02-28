@@ -1,6 +1,9 @@
 scap-security-guide (0.1.31-10) sid; urgency=medium
 
   * Add support for upstream changelog integration from github
+  * Closes: #856404 (0.1.31-9)
+  * Closes: #853903 (0.1.31-6)
+  * Closes: #852415 (0.1.31-5)
 
  -- Philippe Thierry <phil@reseau-libre.net>  Tue, 28 Feb 2017 21:49:28 +0100
 

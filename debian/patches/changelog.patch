@@ -1,0 +1,221 @@
+Description: Add upstream changelog from github
+ This file is generated from the ReleaseNotes posted on github,
+ associated to the current tag. This is the complete upstream
+ ChangeLog as posted by the upstream maintainer
+Author: Watson Yuuma Sato
+Origin: upstream, https://github.com/OpenSCAP/scap-security-guide/releases/tag/v0.1.31
+Last-Update: 2017-02-27
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- /dev/null
++++ b/changelog
+@@ -0,0 +1,209 @@
++# scap-security-guide v0.1.31
++
++## Highlights (in order the changes have been merged):
++- New Wind River Linux profiles
++- Various STIG profile enhancements
++- Support for Ubuntu Xenial
++- Support for Ansible remediations
++- Refactored build process, with more shared content
++- Cleaner build system for RPM
++- Content passing [NIST SCAP Content Validation Tool 1.2.1.15 requirements](https://scap.nist.gov/revision/SCAP%20Content%20Validation%20Tool%201.2.zip)
++
++## XCCDF changes / enhancements:
++- [Bugfix][Fedora][RHEL/7] Fix grub XCCDF to reference 01_users for password/admin account
++- [BugFix][RHEL/6] Fix for issue #1319
++- [Enhancement][RHEL/7] Add Supported/Certified Vendor XCCDF
++- [Enhancement][RHEL/7] Update check-content-ref to use .bz2 version
++- [RHEL/7][Enhancement] Update DISA STIG references for existing content
++- [RHEL7] Updating SSG to align with DoD RHEL7 STIG Draft v2, where appropriate
++- [Enhancement] Additional STIG updates
++- [Enhancement][RHEL/7] Add SELinux Boolean XCCDF
++- [Enhancement][Infrastructure] Add XCCDF weblink macro
++- [RHEL7] Renamed the docker profile to "docker host"
++- [RHEL7] Suggest using SELinux to harden the container host
++- [Enhancement] Issue #1346: Add a check for configuration of Docker storage driver
++- [Enhancement] JBoss EAP 5 XCCDF and OVAL updates
++- [Enhancement] Initial WRLinux support
++- [Enhancement] Move Chromium, JRE, and Firefox XCCDF content to sharec/xccdf
++- [Enhancement][RHEL/7] Add sshd port check content for firewalld
++- [RHEL6][RHEL7][Bugfix] Add content for samba-common package
++- [Enhancement] Organize Wind River Linux profiles
++- [Enhancement] Migrate more XCCDF to shared content
++- [RHEL7] Update RHEL/7 STIG profiles and add some missing CCEs
++- [Enhancement][Infrastructure][RHEL/7] Create shared_guide.xslt and move RHEL/7 XCCDF content to shared/xccdf
++- [Enhancement][Bugfix][RHEL/7] Various RHEL/7 STIG fixes
++- [Bugfix][Enhancement] Break out HBSS Rules and update integrity groups
++- [Bugfix][Enhancement][RHEL7] STIG update for RHEL/7 add additional dconf settings
++- [Bugfix][Infrastructure] Don't include @platform in <fix> element
++- [Bugfix] Add missing <description> element to group
++- [RHEL7] DISA usage
++- [RHEL6][RHEL7] updating DoD STIG profile language to include DISA FAQ
++- [Bugfix] Rename PCI-DSS centric profile ID
++- [Enhancement][RHEL7] Converted XML comment DISA STIG note to XHTML
++- [Bugfix] Align SSG to DISA RHEL6 V1R13 content
++- [RHEL6] RHEL6 CCI updates
++- [RHEL7][Bugfix] Fix SSH private key permissions
++- [Enhancement] add support for Ubuntu Xenial in SSG. Based on Debian 8
++- [Fedora][RHEL7][Bugfix][shared] Fix paths in bootloader password check
++- [RHEL7][BugFix] Fix for downstream RH BZ#1344581
++- [Enhancement][RHEL7] Fix description and title in sshd_disable_rhosts_rsa
++- [Enhancement][RHEL7] Fix regex in sshd_disable_user_known_hosts
++- [Bugfix] Fix and Build FISMA RHEL/6 profile
++- [Bugfix][RHEL6] Fix FTP server profile ID
++
++## OVAL check changes / enhancements:
++- [RHEL6][RHEL7][Bugfix] Add installed_OS_is_certified OVAL for RHEL systems
++- [Enhancement][shared] Examine limits.d/*.conf for maxlogins
++- [BugFix][Debian/8] When extending ANSSI profiles don't inherit the title and description from the parent profile
++- [RHEL/6] Replace double space in selected <ident> elements with single one
++- [BugFix][Infrastructure] Fix for issue #1275 Also fix couple of instances of issue #50
++- [Bugfix] verify-references.py - use proper OVAL paths, unused OVALs are no longer an error
++- [RHEL6][RHEL7][Bugfix] Check for ssl = required or ssl = yes in dovecot/conf.d/10-ssl.conf
++- [Bugfix] Revisit OVAL for "accounts_max_concurrent_login_sessions" ru…
++- [Enhancement][Bugfix] Allow multiple maxlogin specifications in /etc/security/limi…
++- [Bugfix] Fix build-remediations for oval_5.11
++- [Bugfix] Move SSSD OVAL content to oval_5.11
++- [Enhancement] add /etc/cron.daily check to aide_periodic_cron_checking
++- [Bugfix][RHEL7] Correct default and other values in var_password_pam_difok
++- [Bugfix][RHEL7] Add STIG default value to var_accounts_password_minlen_login_defs
++- [Enhancement][RHEL7] STIG Update RHEL/7: Add new SSHD and AIDE XCCDF content
++- [Enhancement][RHEL7] RHEL/7 STIG update: Add new cron content
++- [Enhancement][Bugfix][RHEL7] Add AIDE OVAL content for new AIDE XCCDF
++- [Bugfix] Add OS Certification check for AIDE FIPS OVAL
++
++## Ansible changes / enhancements:
++- [Ansible][Enhancement] Initial ansible support (rhel7)
++- [Ansible][Enhancement] ansible service disabled (rhel7)
++- [Ansible][Enhancement] RHEL7: Add ANSIBLE_kernel_module_disabled
++- [Ansible] Disable POST password expiration
++- [Ansible] create_permission: merge & add ansible
++- [Ansible] another ansible scripts
++
++## Remediations:
++- [BugFix][RHEL/7] RHEL-7 remediation for 'no_empty_passwords' rule is missing --follow-symlinks currently. Fix that and unify the remediations
++- [Fedora][RHEL6][RHEL7][BugFix] Fix remediations without platforms
++- [BugFix][RHEL/7] Rewrite RHEL-7 remediation for 'smartcard_auth' rule
++- [RHEL7] MollyJoBault remediation scripts + fixes by Shawn
++- [Bugfix][RHEL6][RHEL7] Added newline to MACs remediation
++- [Enhancement][Infrastructure] Enhance remediation attributes
++- [Bugfix][RHEL/7] Various remediation script fixes
++- [Bugfix] Don't bleed remediation content into irrelevant other remediations in…
++- [Infrastructure] RHEL7 generate accounts_password
++- [Enhancement][Infrastructure] Add CCE identifiers to scripts that contain the 'CCENUM' keyword
++- [Enhancement][Infrastructure] Addremediations xslt simplification
++- [Infrastructure] Build remediations refactoring
++- [Enhancement][Infrastructure] Add Anaconda Remediation Scripts
++- [Enhancement][Infrastructure] Add Puppet Remediation scripts
++- [Enhancement] [issue 1369]idempotent kernel modules
++
++## Infrastructure:
++- [BugFix][Infrastructure] Fix parallel make
++- [Enhancement][Infastructure][RHEL/7] Migrate more local XSLT to shared XSLT
++- [Infrastructure][Enhancement][RHEL/6][RHEL/7] Fix for #1297 (include the HTML tables and available kickstarts) into produced RPM
++- [Bugfix][Enhancement][Infrastructure] Map OSSRG to DISA SRG URI
++- [Enhancement][Infrastructure] Add vendor variable
++- [Enhancement][Infrastructure] Add custom CCE and Reference capability for Corporate Policies
++- [Enhancement][RHEL/7] Finished moving RHEL7 XSLT to shared XSLT
++- [Infrastructure][Bugfix][infrastructure] Add product stig name variable to shared_xccdf2stigformat.xslt
++- [Enhancement][Infrastructure] Update local XLST content to use shared XSLT
++- [Bugfix] Update SSG project web URL in content
++- [Fedora][Infrastructure] Remove Fedora 22 support
++- [Bugfix][Infrastructure] Fix various testoval.py issues
++- [Enhancement][EAP/5] Add build capability and cleanup
++- [BugFix][Infrastructure] Get rid of duplicate definition of selected OVAL entities (fix for part of #50)
++- [Infrastructure] Utils transforms refactoring
++- [Enhancement] PCI-DSS centric benchmarks for RHEL6 and 7
++- [Infrastructure][BugFix] Add missing <title> and <description> elements for the 'certified-vendor' xccdf:Group
++- [Infrastructure][Bugfix][infrastructure] Remove rhel5 naming from table generation
++- [Infrastructure] Default to the number of CPUs in build-all-guides.py for the number of jobs
++- [Infrastructure][RHEL7] Update rhel7-cpe-dictionary.xml
++- [Infrastructure] Update files by generated versions
++- [Enhancement] Add initial OpenSUSE and SUSE build directories
++- [Bugfix] Makefile fixes
++- [Infrastructure] Refactor template - create_*.py
++- [Infrastructure] Move validate-bash to shared makefile
++- [Infrastructure][Enhancement][Infrastucture] Update disa references
++- [Infrastructure] Don't destroy targets, cp instead of mv. That way rebuilds are faster.
++- [Infrastructure] combineremediations.py to support multiple directories as input
++- [Infrastructure] Use os.path.join instead of string concat for better sanity checks
++- [Infrastructure] Move generated scripts
++- [Bugfix] Fix doubled fixes
++- [Infrastructure] combineovals: remove deprecated branch of code
++- [Infrastructure] Parallelize the "validate" target
++- [Enhancement][Infrastructure] Introduce "profile-stats.py" helper
++- [Infrastructure][Enhancement] Enhance the 'profile-stats.py' helper yet
++- [Infrastructure] End with fatal error if the remediations XML doc can't be loaded
++- [Infrastructure] Combine OVAL - stop copying generated oval
++- [Infrastructure] Move templates & split generations
++- [Infrastructure] RHEL5/Fedora use bash templates
++- [Infrastructure] shared: add template for BASH permission [SMALL]
++- [Infrastructure] Shared: Generate bash - init version
++- [Infrastructure] Fix prefix path for shared remediations
++- [Bugfix] Fix minor mkdir issue
++- [Enhancement] Consolidate common README files and update
++- [Infrastructure] xccdf-addremediations.xslt: Refactor
++- [Infrastructure] Rhel6 use generated bash
++- [Infrastructure] create_BASH_permission.py: Remove forgotten print()
++- [Infrastructure] Shared: generate package_removed
++- [Infrastructure] Shared: generate kernel_module_disabled
++- [Infrastructure] Shared: generate package_installed
++- [Infrastructure] Templates rhel7 permissions
++- [Infrastructure] Templates rhel7
++- [Infrastructure] rhel6 permissions
++- [Infrastructure] rhel5: Generate file permissions
++- [Infrastructure] Remove duplicates remediations
++- [Infrastructure] Fix remediations
++- [Infrastructure] Introduce file generator
++- [Enhancement][Infrastructure] Use shared_guide.xml for content and additional fixes
++- [Infrastructure] compare_remediations
++- [Infrastructure] create_package_(removed_installed) merge
++- [Infrastructure] Remove duplicates templates
++- [Infrastructure] Duplicates finder
++- [Infrastructure] Add support to restrict targets in csv file
++- [Enhancement] share architecture rules more easily
++- [Bugfix][Infrastructure] Remove RHEL idents for derivative OSes
++- [Bugfix] Fix RHEL7 CCP idrefs
++- [Enhancement][Infrastructure] Add shared intro XCCDF
++- [Bugfix][Infrastructure] .gitignore all files in templates/output
++- [Bugfix] Correct filenames for EL7 derivatives in OSP confgurations.
++- [Bugfix] Various Fixes
++- [Infrastructure][Bugfix] Ignore 'THIS FILE IS GENERATED' comments when combining remediation scripts
++- [Enhancement] Check dangling references in all products
++- [Bugfix][Infrastructure] fix ansible xccdf sub
++- [Enhancement] Add CPE for WRLinux
++- [Bugfix][Enhancement] Python transformation scripts refactoring
++- [Enhancement] Add complexity, disruption, reboot, and strategy attributes to script templates
++- [Bugfix] Remove remaining chkconfig scripts from RHEL7
++- [Bugfix][Infrastructure] Remove old "suse" mapping.
++- [Bugfix][Infrastructure] Various SUSE build fixes
++- [Infrastructure] Auto-generate contributor lists
++- [Bugfix] Fixed build issues in SUSE and added sample rules.
++- [Infrastructure] Introduce build_remediations.py
++- [Bugfix] Correct minor typo
++- [Bugfix] fix cut-n-paste error in SE Linux daemon rule comment
++- [Infrastructure] Get rid of attestation references
++- [Bugfix] Fix minor typoe (sic)
++- [Infrastructure][Bugfix][RHEL\6] Fix build-remediations.py when cleaning on RHEL/6
++- [Infrastructure] Remove underused targets (mainly building upstream RPMs)
++- [Infrastructure] Do not install the shared remediation_functions file
++- [Infrastructure] Clean old remediation files
++- [Infrastructure] Compare generated - add oval
++- [Enhancement][Infrastructure] Utils transforms move refactor
++- [Bugfix] Fix zipfile tarball
++- [Infrastructure] Deduplicate remediation templates
++- [Infrastructure] Move built remediations away from templates
++- [Infrastructure] Split shared generate-from-templates calls into bash, ansible and oval
++- [Enhancement][Infrastructure] New install location
++- [Enhancement][Infrastructure] Purge mistery unused files
++- [Infrastructure][Bugfix][infrastructure] Don't fail `make install` if soft link already exists
++- [Infrastructure] RPM building is back!
++- [Infrastructure][Bugfix] Update append_or_replace sed in remediation_functions.xml
++- [Bugfix] Updating invalid e-mail in Author list
++- [Bugfix][Infrastructure] Fix Philippe Thierry's email mapping in generate-contributors.py
++- [Bugfix] Add 'DO NOT EDIT' comments to Contributors files
++- [Bugfix][RHEL6][RHEL7] Add Fedora and RHEL profiles descriptions to man
++- [Infrastructure] Simplify Makefile clean target $(OUT) file/directory removal
++- [Bugfix] Build RHEL6 guides for profiles desktop and ftp
++- [Enhancement] Ubuntu build packages
++
++## <a name="full_changelog" /> [Full list of issues and pull requests closed in this release](https://github.com/OpenSCAP/scap-security-guide/issues?q=milestone%3A0.1.31)

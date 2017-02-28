@@ -3,3 +3,4 @@
 man_lexgrog_support
 dash-support-in-makefiles.patch
 ubuntu-to-all-target.patch
+changelog.patch

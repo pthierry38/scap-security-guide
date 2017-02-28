@@ -8,10 +8,15 @@
 	dh $@ 
 
 # get back current tag release notes from GitHub
-dump_release:
+mkrelease:
+		quilt push changelog.patch
 		debian/lib/release.py
+		dos2unix changelog
+		quilt refresh
+		quilt pop -a
 
-override_dh_auto_build: dump_release
+
+override_dh_auto_build:
 	        dh_auto_build -- all
 		$(MAKE) version-update
 

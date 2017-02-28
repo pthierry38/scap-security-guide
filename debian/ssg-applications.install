@@ -1,3 +1,4 @@
 Firefox/dist/content/* usr/share/ssg/
 JRE/dist/content/* usr/share/ssg/
 Webmin/dist/content/* usr/share/ssg/
+README.md usr/share/doc/ssg-applications/

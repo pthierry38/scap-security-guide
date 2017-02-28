@@ -7,6 +7,10 @@
 %:
 	dh $@ 
 
+# get back current tag release notes from GitHub
+dump_release:
+		debian/lib/release.py > debian/ReleaseNotes.md
+
 override_dh_auto_build:
 	        dh_auto_build -- all
 		$(MAKE) version-update

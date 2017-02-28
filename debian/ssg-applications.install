@@ -1,6 +1,3 @@
-Firefox/dist/guide usr/share/doc/ssg/firefox/
 Firefox/dist/content/* usr/share/ssg/
-JRE/dist/guide usr/share/doc/ssg/jre/
 JRE/dist/content/* usr/share/ssg/
-Webmin/dist/guide usr/share/doc/ssg/webmin/
 Webmin/dist/content/* usr/share/ssg/

@@ -1,8 +1,4 @@
-RHEL/5/dist/guide usr/share/doc/ssg/RHEL5
 RHEL/5/dist/content/* usr/share/ssg/
-RHEL/6/dist/guide usr/share/doc/ssg/RHEL6
 RHEL/6/dist/content/* usr/share/ssg/
-RHEL/7/dist/guide usr/share/doc/ssg/RHEL7
 RHEL/7/dist/content/* usr/share/ssg/
-SUSE/11/dist/guide usr/share/doc/ssg/suse11
 SUSE/11/dist/content/* usr/share/ssg/

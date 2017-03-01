@@ -1,5 +1,10 @@
-Updated Makefiles to support dash. advanced globbing not supported
-and replaced by call to find
+Description: Add support for dash as default shell in Makefiles
+ This patch allows the usage of dash as default SHELL when
+ building scap-security-guide, avoiding advanced globbing.
+Author: Philippe Thierry
+Last-Update: 2017-02-28
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
 --- a/RHEL/6/Makefile
 +++ b/RHEL/6/Makefile
 @@ -153,9 +153,10 @@

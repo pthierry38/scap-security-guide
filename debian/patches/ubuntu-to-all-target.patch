@@ -1,4 +1,10 @@
-Add Ubunbu target (ubuntu1604) to default target. Also updated dist target.
+Description: Add ubuntu target to default all target
+ This patch permit to build all required targets for various
+ binary packages.
+Author: Philippe Thierry
+Last-Update: 2017-02-28
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
 --- a/Makefile
 +++ b/Makefile
 @@ -36,8 +36,8 @@

@@ -1,4 +1,10 @@
-Updated man page to support lexgrog. NAME entry was not correctly formated.
+Description: Corrected manpage header for lexgrog
+ This patch update the NAME entry, which was not correctly
+ formated.
+Author: Philippe Thierry
+Last-Update: 2017-02-28
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
 --- a/docs/scap-security-guide.8
 +++ b/docs/scap-security-guide.8
 @@ -1,7 +1,7 @@

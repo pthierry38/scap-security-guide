@@ -1,4 +1,4 @@
-scap-security-guide (0.1.31-10) sid; urgency=medium
+scap-security-guide (0.1.31-11) sid; urgency=medium
 
   * Add support for upstream changelog
     integrated manually before build, from github ReleaseNote
@@ -20,4 +20,4 @@ scap-security-guide (0.1.31-10) sid; urgency=medium
   * add watch file for uscan
   * Initial Release.
 
- -- Philippe Thierry <phil@reseau-libre.net>  Tue, 28 Feb 2017 21:49:28 +0100
+ -- Philippe Thierry <phil@reseau-libre.net>  Wed, 01 Mar 2017 15:40:32 +0100

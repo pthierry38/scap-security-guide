@@ -1,6 +1,6 @@
 scap-security-guide (0.1.31-12) sid; urgency=medium
 
-  * Initial Release (Closes: #856404).
+  * Initial Release (Closes: #856425).
   * Add support for upstream changelog
     integrated manually before build, from github ReleaseNote
   * add dep5 conform quilt patches headers

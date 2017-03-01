@@ -1,75 +1,23 @@
 scap-security-guide (0.1.31-10) sid; urgency=medium
 
-  * Add support for upstream changelog integration from github
-
- -- Philippe Thierry <phil@reseau-libre.net>  Tue, 28 Feb 2017 21:49:28 +0100
-
-scap-security-guide (0.1.31-9) sid; urgency=medium
-
+  * Add support for upstream changelog
+    integrated manually before build, from github ReleaseNote
+  * add dep5 conform quilt patches headers
   * Updated binary packages name to simplify the structure
-  * bin packages are familly-based, avoiding variation when updating
-
- -- Philippe Thierry <phil@reseau-libre.net>  Tue, 28 Feb 2017 12:31:16 +0100
-
-scap-security-guide (0.1.31-8) sid; urgency=medium
-
-  * Deleted upstream changelog file using rpm spec file. Waiting for real
-    changelog from upstream instead
+  * bin packages are family-based, debian-centric, avoiding variation when updating
   * Add SuSE 11 benchmarks and guides
-
- -- Philippe Thierry <phil@reseau-libre.net>  Sun, 05 Feb 2017 10:16:44 +0100
-
-scap-security-guide (0.1.31-7) sid; urgency=medium
-
   * Add proper copyright dep5 copyright file
   * Updated run-time dependencies
   * set libopenscap8 as recommends, for security policy server cases
-
- -- Philippe Thierry <phil@reseau-libre.net>  Fri, 03 Feb 2017 12:58:01 +0100
-
-scap-security-guide (0.1.31-6) sid; urgency=medium
-
-  * Updated various residual lintian warnings.
-
- -- Philippe Thierry <phil@reseau-libre.net>  Mon, 30 Jan 2017 21:44:12 +0100
-
-scap-security-guide (0.1.31-5) sid; urgency=medium
-
+  * cleaned all residual lintian warnings/infos
   * updated man page to be compliant to lexgrog
-  * corrected two spelling errors
-  * using output of version_update instead of .spec as release notes
-  * updated ssg-base for changelog
-  * exclude svn dir of upstream repo from source tarball
-  * updated doc-base for lintian compliance
   * updated spelling mistakes and various syntax errors
   * updated html files path (guide subdir added)
-  * updated patches to add description
-  * declare guides as doc-base (for lintian conformity)
-
- -- Philippe Thierry <phil@reseau-libre.net>  Mon, 30 Jan 2017 10:44:45 +0100
-
-scap-security-guide (0.1.31-4) sid; urgency=medium
-
-  * set ssg parent dir as property of ssg-base
+  * declare guides as docs (for lintian conformity), add doc-base
   * add RHEL guides and benchmarks
-
- -- Philippe Thierry <phil@reseau-libre.net>  Wed, 25 Jan 2017 21:34:27 +0100
-
-scap-security-guide (0.1.31-3) sid; urgency=medium
-
   * Add XCCDF benchmarks and guides for JRE and Webmin
-
- -- Philippe Thierry <phil@reseau-libre.net>  Mon, 23 Jan 2017 22:05:21 +0100
-
-scap-security-guide (0.1.31-2) sid; urgency=medium
-
   * Updated control file to use correct Standard-version.
   * add watch file for uscan
-
- -- Philippe Thierry <phil@reseau-libre.net>  Mon, 23 Jan 2017 18:57:11 +0100
-
-scap-security-guide (0.1.31-1~sid) sid; urgency=medium
-
   * Initial Release.
 
- -- Philippe Thierry <phil@reseau-libre.net>  Tue, 17 Jan 2017 10:26:46 +0100
+ -- Philippe Thierry <phil@reseau-libre.net>  Tue, 28 Feb 2017 21:49:28 +0100

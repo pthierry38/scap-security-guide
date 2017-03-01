@@ -5,7 +5,7 @@ Maintainer: Philippe Thierry <phil@reseau-libre.net>
 Build-Depends: debhelper (>=10), python (>> 2.7), python-requests, xsltproc, expat, python-lxml, libxml2-utils, bash (>=4.3), sed (>=4.2), libopenscap8
 Standards-Version: 3.9.8
 Homepage: https://www.open-scap.org/security-policies/scap-security-guide
-Vcs-Git: https://github.com/OpenSCAP/scap-security-guide.git
+Vcs-Git: https://github.com/pthierry38/scap-security-guide.git
 Vcs-Browser: https://github.com/OpenSCAP/scap-security-guide
 
 Package: ssg-base
@@ -26,11 +26,12 @@ Description: SCAP Guides and benchmarks targeting Debian 8
  files for Debian Jessie. Remediation files are Shell-based, Ansible-based
  and Puppet-based depending on the target infrastructure deployment policy
 
-Package: ssg-debfamilly
+Package: ssg-debderived
 Architecture: all
 Depends: ${misc:Depends}, ssg-base
-Description: SCAP Guides and benchmarks targeting all deb-based
- distributions such as Ubuntu Trusty or Xenial.
+Description: SCAP Guides and benchmarks targeting Debian-based OS
+ This package contains all the SCAP guides for deb-based distributions
+ such as Ubuntu Trusty or Xenial.
  This package contains all the SCAP guides, benchmarks and remediation
  files. Remediation files are Shell-based, Ansible-based  and
  Puppet-based depending on the target infrastructure deployment policy
@@ -38,18 +39,16 @@ Description: SCAP Guides and benchmarks targeting all deb-based
 Package: ssg-applications
 Architecture: all
 Depends: ${misc:Depends}, ssg-base
-Description: SCAP Guides and benchmarks targeting applications such as
- Firefox browser, Webmin, JRE.
+Description: SCAP Guides and benchmarks targeting userspace applications
  This package contains all the SCAP guides, benchmarks and remediation
  files. Remediation files are Shell-based, Ansible-based and
  Puppet-based depending on the target infrastructure deployment
  policy
 
-Package: ssg-otheros
+Package: ssg-nondebian
 Architecture: all
 Depends: ${misc:Depends}, ssg-base
-Description: SCAP Guides and benchmarks targeting other GNU/Linux
- operating systems such as RHEL, Fedora or SuSE.
+Description: SCAP Guides and benchmarks targeting other GNU/Linux OS
  This package contains all the SCAP guides, benchmarks and remediation
  files. Remediation files are Shell-based, Ansible-based and
  Puppet-based depending on the target infrastructure deployment

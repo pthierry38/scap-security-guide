@@ -2,4 +2,4 @@ RHEL/5/dist/content/* usr/share/ssg/
 RHEL/6/dist/content/* usr/share/ssg/
 RHEL/7/dist/content/* usr/share/ssg/
 SUSE/11/dist/content/* usr/share/ssg/
-README.md usr/share/doc/ssg-otheros/
+README.md usr/share/doc/ssg-nondebian/

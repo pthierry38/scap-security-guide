@@ -1,4 +1,4 @@
-Document: ssg-otheros
+Document: ssg-nondebian
 Title: SCAP Security Guide informational document
 Author: SCAP Security Guide team
 Abstract: This manual describes how to use the SSG guides and
@@ -8,4 +8,4 @@ Abstract: This manual describes how to use the SSG guides and
 Section: System/Security
 
 Format: text
-Files: /usr/share/doc/ssg-otheros/README.md.gz
+Files: /usr/share/doc/ssg-nondebian/README.md.gz

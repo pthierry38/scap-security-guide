@@ -1,5 +1,6 @@
 scap-security-guide (0.1.31-12) sid; urgency=medium
 
+  * Initial Release (Closes: #856404).
   * Add support for upstream changelog
     integrated manually before build, from github ReleaseNote
   * add dep5 conform quilt patches headers
@@ -18,6 +19,5 @@ scap-security-guide (0.1.31-12) sid; urgency=medium
   * Add XCCDF benchmarks and guides for JRE and Webmin
   * Updated control file to use correct Standard-version.
   * add watch file for uscan
-  * Initial Release.
 
  -- Philippe Thierry <phil@reseau-libre.net>  Wed, 01 Mar 2017 18:25:10 +0100

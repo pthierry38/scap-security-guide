@@ -41,15 +41,15 @@ Architecture: all
 Depends: ${misc:Depends}, ssg-base
 Description: SCAP Guides and benchmarks targeting userspace applications
  This package contains all the SCAP guides, benchmarks and remediation
- files. Remediation files are Shell-based, Ansible-based and
- Puppet-based depending on the target infrastructure deployment
- policy
+ files for userspace applications. Remediation files are Shell-based,
+ Ansible-based and Puppet-based depending on the target infrastructure
+ deployment policy
 
 Package: ssg-nondebian
 Architecture: all
 Depends: ${misc:Depends}, ssg-base
 Description: SCAP Guides and benchmarks targeting other GNU/Linux OS
  This package contains all the SCAP guides, benchmarks and remediation
- files. Remediation files are Shell-based, Ansible-based and
- Puppet-based depending on the target infrastructure deployment
- policy
+ files for nondebian OS targets such as Red-Hat RHEL or SuSE. Remediation
+ files are Shell-based, Ansible-based and Puppet-based depending on the
+ target infrastructure deployment policy

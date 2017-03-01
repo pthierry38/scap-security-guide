@@ -4,7 +4,7 @@ scap-security-guide (0.1.31-11) sid; urgency=medium
     integrated manually before build, from github ReleaseNote
   * add dep5 conform quilt patches headers
   * Updated binary packages name to simplify the structure
-  * bin packages are family-based, debian-centric, avoiding variation when updating
+  * bin packages are family-based, debian-centric
   * Add SuSE 11 benchmarks and guides
   * Add proper copyright dep5 copyright file
   * Updated run-time dependencies

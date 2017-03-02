@@ -1,4 +1,4 @@
-scap-security-guide (0.1.31-13) sid; urgency=medium
+scap-security-guide (0.1.31-13) unstable; urgency=medium
 
   * Initial Release (Closes: #856425).
   * Add support for upstream changelog

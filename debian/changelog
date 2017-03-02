@@ -1,23 +1,24 @@
-scap-security-guide (0.1.31-12) sid; urgency=medium
+scap-security-guide (0.1.31-13) sid; urgency=medium
 
   * Initial Release (Closes: #856425).
   * Add support for upstream changelog
     integrated manually before build, from github ReleaseNote
-  * add dep5 conform quilt patches headers
+    support for getting upstream version from debian changelog
+  * Add dep5 conform quilt patches headers
   * Updated binary packages name to simplify the structure
-  * bin packages are family-based, debian-centric
+  * Bin packages are family-based, debian-centric
   * Add SuSE 11 benchmarks and guides
   * Add proper copyright dep5 copyright file
   * Updated run-time dependencies
-  * set libopenscap8 as recommends, for security policy server cases
-  * cleaned all residual lintian warnings/infos
-  * updated man page to be compliant to lexgrog
-  * updated spelling mistakes and various syntax errors
-  * updated html files path (guide subdir added)
-  * declare guides as docs (for lintian conformity), add doc-base
-  * add RHEL guides and benchmarks
+  * Set libopenscap8 as recommends, for security policy server cases
+  * Cleaned all residual lintian warnings/infos
+  * Updated man page to be compliant to lexgrog
+  * Updated spelling mistakes and various syntax errors
+  * Updated html files path (guide subdir added)
+  * Declare guides as docs (for lintian conformity), add doc-base
+  * Add RHEL guides and benchmarks
   * Add XCCDF benchmarks and guides for JRE and Webmin
   * Updated control file to use correct Standard-version.
-  * add watch file for uscan
+  * Add watch file for uscan
 
  -- Philippe Thierry <phil@reseau-libre.net>  Wed, 01 Mar 2017 18:25:10 +0100

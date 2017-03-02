@@ -1,13 +1,15 @@
 #!/usr/bin/python
 
+"""
+release.py: Get back the upstream releaseNotes to generate the correponsing
+ChangeLog file
+"""
+
 import codecs
 import json
 import re
 import subprocess
 import requests
-
-"""release.py: Get back the upstream releaseNotes to generate the correponsing
-ChangeLog file"""
 
 __author__ = "P. Thierry"
 __license__ = "GPL2+"

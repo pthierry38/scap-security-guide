@@ -9,6 +9,7 @@ import codecs
 import json
 import re
 import subprocess
+import sys
 import requests
 
 __author__ = "P. Thierry"
@@ -39,3 +40,4 @@ if R.ok:
         ch.write(REPOITEM['body'])
 else:
     print "error loading request: got " + str(R.status_code)
+    sys.exit(1)

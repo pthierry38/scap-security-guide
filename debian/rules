@@ -9,14 +9,22 @@
 
 # get back current tag release notes from GitHub
 mkrelease:
-		quilt push changelog.patch
-		debian/lib/release.py
-		dos2unix changelog
-		quilt refresh
-		quilt pop -a
+	quilt push changelog.patch
+	debian/lib/release.py
+	dos2unix changelog
+	quilt refresh
+	quilt pop -a
+	@echo
+	@echo This target is made to fail intentionally, to make sure
+	@echo that it is NEVER run during the automated build. Please
+	@echo ignore the following error, the changelog file has been
+	@echo generated SUCCESSFULLY.
+	@echo
+	exit 1
+
 
 
 override_dh_auto_build:
-	        dh_auto_build -- all
-		$(MAKE) version-update
+	dh_auto_build
+	$(MAKE) version-update
 

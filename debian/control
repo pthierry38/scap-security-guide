@@ -18,7 +18,7 @@ Description: SCAP Security guide base content and documentation
  the SCAP-security-guide works. It deploys man page and all various
  information about current SSG release
  SCAP (Security Content Automation Protocol) is a set of standards used in
- order to automatically manages vulnerabilities and policy compliance
+ order to automatically manage vulnerabilities and policy compliance
  evaluation on a complete deployed infrastructure. SSG provides various
  official policies such as PCI-DSS, NIST SP-800-53 or ANSSI best practices
  as official policies
@@ -31,7 +31,7 @@ Description: SCAP Guides and benchmarks targeting Debian 8
  files for Debian Jessie. Remediation files are Shell-based, Ansible-based
  and Puppet-based depending on the target infrastructure deployment policy
  SCAP (Security Content Automation Protocol) is a set of standards used in
- order to automatically manages vulnerabilities and policy compliance
+ order to automatically manage vulnerabilities and policy compliance
  evaluation on a complete deployed infrastructure. SSG provides various
  official policies such as PCI-DSS, NIST SP-800-53 or ANSSI best practices
  as official policies
@@ -46,7 +46,7 @@ Description: SCAP Guides and benchmarks targeting Debian-based OS
  files. Remediation files are Shell-based, Ansible-based  and
  Puppet-based depending on the target infrastructure deployment policy
  SCAP (Security Content Automation Protocol) is a set of standards used in
- order to automatically manages vulnerabilities and policy compliance
+ order to automatically manage vulnerabilities and policy compliance
  evaluation on a complete deployed infrastructure. SSG provides various
  official policies such as PCI-DSS, NIST SP-800-53 or ANSSI best practices
  as official policies
@@ -60,7 +60,7 @@ Description: SCAP Guides and benchmarks targeting userspace applications
  Ansible-based and Puppet-based depending on the target infrastructure
  deployment policy
  SCAP (Security Content Automation Protocol) is a set of standards used in
- order to automatically manages vulnerabilities and policy compliance
+ order to automatically manage vulnerabilities and policy compliance
  evaluation on a complete deployed infrastructure. SSG provides various
  official policies such as PCI-DSS, NIST SP-800-53 or ANSSI best practices
  as official policies
@@ -74,7 +74,7 @@ Description: SCAP Guides and benchmarks targeting other GNU/Linux OS
  files are Shell-based, Ansible-based and Puppet-based depending on the
  target infrastructure deployment policy
  SCAP (Security Content Automation Protocol) is a set of standards used in
- order to automatically manages vulnerabilities and policy compliance
+ order to automatically manage vulnerabilities and policy compliance
  evaluation on a complete deployed infrastructure. SSG provides various
  official policies such as PCI-DSS, NIST SP-800-53 or ANSSI best practices
  as official policies

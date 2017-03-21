@@ -28,3 +28,8 @@ override_dh_auto_build:
 	dh_auto_build
 	$(MAKE) version-update
 
+override_dh_auto_clean:
+	dh_auto_clean
+	find . -type d -name output | xargs rm -rf
+	find . -type d -name build  | xargs rm -rf
+	find . -type d -name dist   | xargs rm -rf

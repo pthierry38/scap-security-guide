@@ -16,12 +16,13 @@ Suggests: ansible (>= 2), puppet (>= 4.8), bash (>= 4.4)
 Description: SCAP Security guide base content and documentation
  This package contains the basic content and manual pages explaining how
  the SCAP-security-guide works. It deploys man page and all various
- information about current SSG release
+ information about current SSG release.
+ .
  SCAP (Security Content Automation Protocol) is a set of standards used in
  order to automatically manage vulnerabilities and policy compliance
  evaluation on a complete deployed infrastructure. SSG provides various
  official policies such as PCI-DSS, NIST SP-800-53 or ANSSI best practices
- as official policies
+ as official policies.
 
 Package: ssg-debian
 Architecture: all
@@ -29,12 +30,13 @@ Depends: ${misc:Depends}, ssg-base
 Description: SCAP Guides and benchmarks targeting Debian 8
  This package contains all the SCAP guides, benchmarks and remediation
  files for Debian Jessie. Remediation files are Shell-based, Ansible-based
- and Puppet-based depending on the target infrastructure deployment policy
+ and Puppet-based depending on the target infrastructure deployment policy.
+ .
  SCAP (Security Content Automation Protocol) is a set of standards used in
  order to automatically manage vulnerabilities and policy compliance
  evaluation on a complete deployed infrastructure. SSG provides various
  official policies such as PCI-DSS, NIST SP-800-53 or ANSSI best practices
- as official policies
+ as official policies.
 
 Package: ssg-debderived
 Architecture: all
@@ -44,12 +46,13 @@ Description: SCAP Guides and benchmarks targeting Debian-based OS
  such as Ubuntu Trusty or Xenial.
  This package contains all the SCAP guides, benchmarks and remediation
  files. Remediation files are Shell-based, Ansible-based  and
- Puppet-based depending on the target infrastructure deployment policy
+ Puppet-based depending on the target infrastructure deployment policy.
+ .
  SCAP (Security Content Automation Protocol) is a set of standards used in
  order to automatically manage vulnerabilities and policy compliance
  evaluation on a complete deployed infrastructure. SSG provides various
  official policies such as PCI-DSS, NIST SP-800-53 or ANSSI best practices
- as official policies
+ as official policies.
 
 Package: ssg-applications
 Architecture: all
@@ -58,23 +61,25 @@ Description: SCAP Guides and benchmarks targeting userspace applications
  This package contains all the SCAP guides, benchmarks and remediation
  files for userspace applications. Remediation files are Shell-based,
  Ansible-based and Puppet-based depending on the target infrastructure
- deployment policy
+ deployment policy.
+ .
  SCAP (Security Content Automation Protocol) is a set of standards used in
  order to automatically manage vulnerabilities and policy compliance
  evaluation on a complete deployed infrastructure. SSG provides various
  official policies such as PCI-DSS, NIST SP-800-53 or ANSSI best practices
- as official policies
+ as official policies.
 
 Package: ssg-nondebian
 Architecture: all
 Depends: ${misc:Depends}, ssg-base
 Description: SCAP Guides and benchmarks targeting other GNU/Linux OS
  This package contains all the SCAP guides, benchmarks and remediation
- files for nondebian OS targets such as Red-Hat RHEL or SuSE. Remediation
- files are Shell-based, Ansible-based and Puppet-based depending on the
- target infrastructure deployment policy
+ files for nondebian operating system targets such as Red-Hat RHEL or SuSE.
+ Remediation files are Shell-based, Ansible-based and Puppet-based depending
+ on the target infrastructure deployment policy.
+ .
  SCAP (Security Content Automation Protocol) is a set of standards used in
  order to automatically manage vulnerabilities and policy compliance
  evaluation on a complete deployed infrastructure. SSG provides various
  official policies such as PCI-DSS, NIST SP-800-53 or ANSSI best practices
- as official policies
+ as official policies.

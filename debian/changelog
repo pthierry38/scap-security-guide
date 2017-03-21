@@ -18,7 +18,7 @@ scap-security-guide (0.1.31-1) unstable; urgency=medium
   * Declare guides as docs (for lintian conformity), add doc-base
   * Add RHEL guides and benchmarks
   * Add XCCDF benchmarks and guides for JRE and Webmin
-  * Updated control file to use correct Standard-version.
+  * Updated control file to use correct Standard-version
   * Add watch file for uscan
   * Upload sponsored by Petter Reinholdtsen.
 

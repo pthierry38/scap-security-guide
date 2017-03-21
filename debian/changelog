@@ -20,5 +20,6 @@ scap-security-guide (0.1.31-1) unstable; urgency=medium
   * Add XCCDF benchmarks and guides for JRE and Webmin
   * Updated control file to use correct Standard-version.
   * Add watch file for uscan
+  * Upload sponsored by Petter Reinholdtsen.
 
  -- Philippe Thierry <phil@reseau-libre.net>  Wed, 01 Mar 2017 18:25:10 +0100

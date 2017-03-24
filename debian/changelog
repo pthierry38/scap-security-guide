@@ -1,3 +1,10 @@
+scap-security-guide (0.1.31-2) unstable; urgency=medium
+
+  * Updated Multiarch hinter for ssg-base
+  * Upload sponsored by Petter Reinholdtsen.
+
+ -- Philippe Thierry <phil@reseau-libre.net>  Fri, 24 Mar 2017 10:34:04 +0100
+
 scap-security-guide (0.1.31-1) unstable; urgency=medium
 
   * Initial Release (Closes: #856425).

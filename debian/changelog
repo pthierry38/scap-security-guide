@@ -1,3 +1,12 @@
+scap-security-guide (0.1.31-3) unstable; urgency=medium
+
+  * Updated Multiarch hinter for all packages
+  * Updated control file to take into acount G. Costamagna remarks to ITP
+  * Updated README.Debian to describe security server use case
+  * Upload sponsored by Petter Reinholdtsen.
+
+ -- Philippe Thierry <phil@reseau-libre.net>  Mon, 10 Apr 2017 15:06:06 +0200
+
 scap-security-guide (0.1.31-2) unstable; urgency=medium
 
   * Updated Multiarch hinter for ssg-base

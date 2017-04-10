@@ -8,19 +8,19 @@ oscap binary to validate the local system.
 This package suite deploy all guides and benchmarks that are not a
 part of the openSCAP project directly (deployed through libopenscap8).
 
-Using the XCCDF benchmarks
---------------------------
+Using the XCCDF benchmarks localy
+---------------------------------
 
 benchmarks and Oval files are deployed in /usr/share/<package-name>/
 
 You can start a local bench using the following command. See the associated
 guides to be informed of the profiles name.
 
-# oscap xccdf eval --profile <profilename> \
-  --cpe /usr/share/<package-name>/ssg-<target>-cpe-dictionary.xml \
-  --results <resulsfile>.xml \
-  --report <reportfile>.html \
-  /usr/share/<package-name>/ssg-<target>-xccdf.xml 
+# oscap xccdf eval --profile anssi_np_nt28_high \
+  --cpe /usr/share/ssg/ssg-debian8-cpe-dictionary.xml \
+  --results scan_results.xml \
+  --report scan_report.html \
+  /usr/share/ssg/ssg-debian8-xccdf.xml 
 
 results and report are generated during oscap execution.
 
@@ -31,4 +31,16 @@ etc.). In that case, the tool deploying them has to copy the file to the remote
 target and run the oscap tool localy. The remote target don't need these files
 to be installed through apt.
 
- -- Philippe Thierry <phil@reseau-libre.net>  Tue, 17 Jan 2017 10:26:46 +0100
+Using the XCCDF benchmarks remotely
+-----------------------------------
+
+this is the case of a security server used to scan a local infrastructure.
+In this case, only scap-security-guide packages and its required dependencies
+are needed localy.
+It is possible to lauch scan to heterogeneous distributions (RHEL, Ubuntu,
+etc.). Reports are saved localy.
+
+$ oscap-ssh user@ubuntu-xenial 22 xccdf eval --profile anssi_np_nt28_restrictive \
+  /usr/share/ssg/ssg-ubuntu1604-ds.xml
+
+ -- Philippe Thierry <phil@reseau-libre.net>  Mon, 10 Apr 2017 13:04:21 +0200

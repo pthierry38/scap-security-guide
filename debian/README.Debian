@@ -8,8 +8,8 @@ oscap binary to validate the local system.
 This package suite deploy all guides and benchmarks that are not a
 part of the openSCAP project directly (deployed through libopenscap8).
 
-Using the XCCDF benchmarks localy
----------------------------------
+Using the XCCDF benchmarks locally
+----------------------------------
 
 benchmarks and Oval files are deployed in /usr/share/<package-name>/
 
@@ -28,7 +28,7 @@ In the case of using benchmark and Oval files over a complete infrastructure,
 libopenscap8 is not a real requirement on the host hosting the XCCDF profiles
 if they are executed on remote targets only (for e.g. using Ansible, Foreman,
 etc.). In that case, the tool deploying them has to copy the file to the remote
-target and run the oscap tool localy. The remote target don't need these files
+target and run the oscap tool locally. The remote target don't need these files
 to be installed through apt.
 
 Using the XCCDF benchmarks remotely
@@ -36,9 +36,9 @@ Using the XCCDF benchmarks remotely
 
 this is the case of a security server used to scan a local infrastructure.
 In this case, only scap-security-guide packages and its required dependencies
-are needed localy.
+are needed locally.
 It is possible to lauch scan to heterogeneous distributions (RHEL, Ubuntu,
-etc.). Reports are saved localy.
+etc.). Reports are saved locally.
 
 $ oscap-ssh user@ubuntu-xenial 22 xccdf eval --profile anssi_np_nt28_restrictive \
   /usr/share/ssg/ssg-ubuntu1604-ds.xml

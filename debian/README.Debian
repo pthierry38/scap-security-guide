@@ -37,7 +37,7 @@ Using the XCCDF benchmarks remotely
 this is the case of a security server used to scan a local infrastructure.
 In this case, only scap-security-guide packages and its required dependencies
 are needed locally.
-It is possible to lauch scan to heterogeneous distributions (RHEL, Ubuntu,
+It is possible to launch scan to heterogeneous distributions (RHEL, Ubuntu,
 etc.). Reports are saved locally.
 
 $ oscap-ssh user@ubuntu-xenial 22 xccdf eval --profile anssi_np_nt28_restrictive \

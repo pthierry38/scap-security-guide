@@ -16,10 +16,5 @@ RHEL/7/output/puppet/* usr/share/ssg/RHEL/7/puppet/
 RHEL/7/output/bash/* usr/share/ssg/RHEL/7/bash/
 RHEL/7/output/ansible/* usr/share/ssg/RHEL/7/ansible/
 RHEL/7/dist/content/* usr/share/ssg/
-SUSE/11/output/*-remediations.xml usr/share/ssg/SUSE/11/
-SUSE/11/output/anaconda/* usr/share/ssg/SUSE/11/anaconda/
-SUSE/11/output/puppet/* usr/share/ssg/SUSE/11/puppet/
-SUSE/11/output/bash/* usr/share/ssg/SUSE/11/bash/
-SUSE/11/output/ansible/* usr/share/ssg/SUSE/11/ansible/
 SUSE/11/dist/content/* usr/share/ssg/
 README.md usr/share/doc/ssg-nondebian/

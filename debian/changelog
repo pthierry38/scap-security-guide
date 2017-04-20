@@ -1,3 +1,12 @@
+scap-security-guide (0.1.31-4) unstable; urgency=medium
+
+  * Corrected spell check (lintian W).
+  * Add remediations for OS XCCDF benchmarks
+    support for puppet, bash, anaconda and ansible
+  * Upload sponsored by Petter Reinholdtsen.
+
+ -- Philippe Thierry <phil@reseau-libre.net>  Thu, 20 Apr 2017 09:22:51 +0200
+
 scap-security-guide (0.1.31-3) unstable; urgency=medium
 
   * Updated Multiarch hinter for all packages

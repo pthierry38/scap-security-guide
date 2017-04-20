@@ -1,2 +1,7 @@
+Ubuntu/16.04/output/*-remediations.xml usr/share/ssg/Ubuntu/16.04/
+Ubuntu/16.04/output/anaconda/* usr/share/ssg/Ubuntu/16.04/anaconda/
+Ubuntu/16.04/output/puppet/* usr/share/ssg/Ubuntu/16.04/puppet/
+Ubuntu/16.04/output/bash/* usr/share/ssg/Ubuntu/16.04/bash/
+Ubuntu/16.04/output/ansible/* usr/share/ssg/Ubuntu/16.04/ansible/
 Ubuntu/16.04/dist/content/* usr/share/ssg/
 README.md usr/share/doc/ssg-debderived/

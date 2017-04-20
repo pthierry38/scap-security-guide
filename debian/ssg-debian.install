@@ -1,2 +1,7 @@
 Debian/8/dist/content/* usr/share/ssg/
+Debian/8/output/*-remediations.xml usr/share/ssg/Debian/8/
+Debian/8/output/anaconda/* usr/share/ssg/Debian/8/anaconda/
+Debian/8/output/puppet/* usr/share/ssg/Debian/8/puppet/
+Debian/8/output/bash/* usr/share/ssg/Debian/8/bash/
+Debian/8/output/ansible/* usr/share/ssg/Debian/8/ansible/
 README.md usr/share/doc/ssg-debian/

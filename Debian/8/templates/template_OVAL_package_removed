@@ -5,7 +5,7 @@
     <metadata>
       <title>Package PKGNAME Removed</title>
       <affected family="unix">
-        <platform>Debian 8</platform>
+        <platform>multi_platform_debian</platform>
       </affected>
       <description>The DEB package PKGNAME should be removed.</description>
     </metadata>

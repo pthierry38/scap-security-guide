@@ -22,9 +22,14 @@ should be disabled.
 <br /><br />
 If the system does not require network communications but still
 needs to use the loopback interface, remove all files of the form
+<os-type-macro type="rhel7,rhel6,rhel5,fedora,opensuse,sle11,sle12,osp7,eap5,fuse6,wrlinux">
 <tt>ifcfg-<i>interface</i></tt> except for <tt>ifcfg-lo</tt> from
 <tt>/etc/sysconfig/network-scripts</tt>:
 <pre>$ sudo rm /etc/sysconfig/network-scripts/ifcfg-<i>interface</i></pre>
+</os-type-macro><os-type-macro type="debian,ubuntu">
+<tt>/etc/network/interfaces.d/</tt> and keep only the
+<tt>/etc/network/interfaces</tt> file with the lo interface configured.
+</os-type-macro>
 If the system is a standalone machine with no need for network access or even
 communication over the loopback device, then disable this service.
 <systemd-service-macro enable="false" service="network" />

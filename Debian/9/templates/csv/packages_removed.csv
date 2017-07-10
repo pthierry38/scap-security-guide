@@ -1,0 +1,7 @@
+telnetd,
+telnet,
+inetutils-telnetd,
+telnetd-ssl,
+ntpdate,
+nis,
+openssh-server,

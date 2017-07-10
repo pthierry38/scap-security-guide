@@ -1,0 +1,12 @@
+<Profile id="anssi_np_nt012">
+<title override="true">Profile for ANSSI DAT-NT-012</title>
+<description override="true">This profile contains items for logging best practices.</description>
+
+<!-- System Logging Requirements -->
+<select idref="rsyslog_files_ownership" selected="true" />
+<select idref="rsyslog_files_groupownership" selected="true" />
+<select idref="rsyslog_files_permissions" selected="true" />
+<select idref="rsyslog_remote_loghost" selected="false" />
+
+
+</Profile>

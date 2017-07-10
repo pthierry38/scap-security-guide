@@ -1,0 +1,34 @@
+<Profile id="anssi_np_nt28_average" extends="anssi_np_nt28_minimal">
+<title override="true">Profile for ANSSI DAT-NT28 Average (Intermediate) Level</title>
+<description override="true">This profile contains items for GNU/Linux installations already protected by multiple higher level security stacks.</description>
+
+<!-- partitioning -->
+<select idref="partition_for_tmp" selected="true"/>
+<select idref="partition_for_var" selected="true"/>
+<select idref="partition_for_var_log" selected="true"/>
+<select idref="partition_for_var_log_audit" selected="true"/>
+<select idref="partition_for_home" selected="true"/>
+
+<!-- services -->
+<!-- to add, shared XCCDF 
+<select idref="package_ntp_installed" selected="true"/>
+<select idref="package_ntp_installed" selected="true"/>
+<select idref="package_ntpdate_removed" selected="true"/>
+-->
+
+<!-- System Logging Requirements -->
+<select idref="rsyslog_files_ownership" selected="true" />
+<select idref="rsyslog_files_groupownership" selected="true" />
+<select idref="rsyslog_files_permissions" selected="true" />
+<select idref="rsyslog_remote_loghost" selected="false" />
+
+<!-- critical files -->
+<select idref="file_permissions_systemmap" selected="true"/>
+
+<!-- sysctl -->
+<select idref="sysctl_fs_protected_symlinks" selected="true" />
+<select idref="sysctl_fs_protected_hardlinks" selected="true" />
+<select idref="sysctl_fs_suid_dumpable" selected="true" />
+<select idref="sysctl_kernel_randomize_va_space" selected="true" />
+
+</Profile>

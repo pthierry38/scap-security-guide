@@ -1,0 +1,8 @@
+<Profile id="anssi_np_nt007">
+<title override="true">Profile for ANSSI DAT-NT-007</title>
+<description override="true">This profile contains items for SSH hardening.</description>
+
+<select idref="package_telnetd_removed" selected="true"/>
+<select idref="package_telnet_removed" selected="true"/>
+<select idref="package_rsh-server_removed" selected="true"/>
+</Profile>

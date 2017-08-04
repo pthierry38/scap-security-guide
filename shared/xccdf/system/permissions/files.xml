@@ -42,7 +42,9 @@ critical for system security.</rationale>
 <ref nist="AC-6" disa="" pcidss="Req-8.7.c" cjis="5.5.2.2" />
 </Rule>
 
-<!-- XXX: while rationale and ocil seems to be fusioned instead of filtered, keep separated rule -->
+<!-- XXX: while rationale and ocil seems to be fusioned instead of filtered, making xslt errors,
+     keep separated rule 
+-->
 <Rule id="groupowner_shadow_file" severity="medium" prodtype="debian8">
 <title>Verify Group Who Owns <tt>shadow</tt> File</title>
 <description><filegroupowner-desc-macro file="/etc/shadow" group="shadow"/></description>

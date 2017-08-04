@@ -9,7 +9,7 @@
     </metadata>
 
     <criteria operator="AND">
-      <extend_definition comment="syslog-ng daemon is used as local logging daemon" definition_ref="package_syslogng_installed" />
+      <extend_definition comment="syslog-ng daemon is used as local logging daemon" definition_ref="package_syslog-ng-core_installed" />
       <criterion comment="Check permissions of syslog-ng main config file" test_ref="test_permissions_syslogng_file" />
       <criterion comment="Check permissions of syslog-ng included config files" test_ref="test_permissions_syslogng_slave_files" />
     </criteria>

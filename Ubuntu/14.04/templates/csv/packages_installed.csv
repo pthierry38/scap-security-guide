@@ -10,3 +10,4 @@
 ntp,
 rsyslog,
 syslog-ng,
+aide,
